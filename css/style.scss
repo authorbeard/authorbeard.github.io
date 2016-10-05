@@ -7,21 +7,33 @@
 
 $scotch-primary: rgb(255, 69, 69);
 $scotch-secondary: #FF7B7B;
-$hamwater-title: rgb(199, 83, 35);
+$hamwater-title: #E34706;
 
 %cardo { font-family: 'Cardo', serif; }
-%newscycle { font-family: 'News Cycle', sans-serif;}
+%news { font-family: 'News Cycle', sans-serif;}
 %quattro { font-family: 'Quattrocento', serif;}
 %roboto { font-family: 'Roboto Condensed', sans-serif; }
 
-
 body {
-    @extend %cardo;
+
+    @extend %quattro;
     font-size: 18px;
     line-height: 30px;
     padding-top: 51px;
     -webkit-font-smoothing: antialiased;
+
 }
+
+row.landing-nav {
+    
+    col a {
+        @extend %quattro;
+        font-size: 48px;
+        color: $hamwater-title;
+    }
+}
+
+
 p {
     margin-bottom: 30px;
 }
@@ -30,19 +42,25 @@ a {
     outline: none !important;
     text-decoration: none !important;
     transition: all 225ms ease;
-    color: $scotch-secondary;
+    color: $hamwater-title;
 
     &:hover { color: #6165FF; }
 }
+
+
 .btn {
     text-transform: uppercase;
     font-weight: 400;
-    @extend %newscycle;
+    @extend %news;
 }
 h1, h2, h3, h4, h5, h6 { @extend %quattro; }
 ::selection {
     background: #086AFF;
     color: $hamwater-title;
+}
+
+nav#landing {
+    border-bottom-color: $hamwater-title;
 }
 nav.navbar {
     margin: 0;
@@ -83,7 +101,7 @@ h1.special {
     overflow: hidden;
     margin: 0;
     text-transform: uppercase;
-    @extend %newscycle;
+    @extend %news;
     font-size: 69px;
     line-height: 69px;
     font-weight: 700;
@@ -204,7 +222,7 @@ h1.special {
             font-size: 12px;
             line-height: 1.5;
             text-transform: uppercase;
-            @extend %newscycle;
+            @extend %news;
         }
     }
 

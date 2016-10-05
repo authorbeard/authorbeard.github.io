@@ -1,0 +1,8 @@
+<div class="container-fluid">
+  <row class="landing-nav">
+    {% for item in site.data.nav.landing_nav %}
+      <col><a href="{{item.url}}">{{item.text}}</col>
+    {% endfor %}
+  </row>
+
+</div>

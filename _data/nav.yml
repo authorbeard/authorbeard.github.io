@@ -10,10 +10,6 @@ general_nav:
     - { url: '/resume', text: 'Resume'}
     - { url: '/about', text: 'About' }
     - { url: 'https://github.com/authorbeard', text: 'Find me on Github' }
-    - { url: '/code', text: 'Code'}
-    - { url: '/copy', text: 'Copy'}
-    - { url: '/fiction', text: 'Fiction'}
-    - { url: '/blog', text: 'Hamwater'}  
 
 about_site:
     - { url: 'http://scotch-io.github.io', text: 'Built on the Scotch Jekyll Bootstrap theme.'}
