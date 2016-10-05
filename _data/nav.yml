@@ -6,10 +6,16 @@ landing_nav:
 
 general_nav:
     - { url: '/', text: 'Home' }
+    - { url: '/bio', text: 'Michael Nolan'}
+    - { url: '/resume', text: 'Resume'}
     - { url: '/about', text: 'About' }
     - { url: 'https://github.com/authorbeard', text: 'Find me on Github' }
-    
+    - { url: '/code', text: 'Code'}
+    - { url: '/copy', text: 'Copy'}
+    - { url: '/fiction', text: 'Fiction'}
+    - { url: '/blog', text: 'Hamwater'}  
 
 about_site:
-    - { url: 'https://scotch.io/tutorials/getting-started-with-jekyll-plus-a-free-bootstrap-3-starter-theme', text: 'Read the Tutorial' }
     - { url: 'http://scotch-io.github.io', text: 'Built on the Scotch Jekyll Bootstrap theme.'}
+    - { url: 'https://scotch.io/tutorials/getting-started-with-jekyll-plus-a-free-bootstrap-3-starter-theme', text: 'Read the Tutorial' }
+    
