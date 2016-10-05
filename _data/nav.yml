@@ -1,0 +1,6 @@
+main:
+    - { url: '/', text: 'Michael Nolan' }
+    - { url: '/about', text: 'About' }
+    - { url: 'https://scotch.io/tutorials/getting-started-with-jekyll-plus-a-free-bootstrap-3-starter-theme', text: 'Read the Tutorial' }
+    - { url: 'https://github.com/authorbeard', text: 'Find me on Github' }
+    - { url: 'http://scotch-io.github.io', text: 'Built on the Scotch Jekyll Bootstrap theme.'}
