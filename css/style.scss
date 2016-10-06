@@ -20,6 +20,11 @@ $hamwater-title: #E34706;
     margin-right: auto;
 }
 
+body {
+    background: #000000;
+}
+
+
 .alert {
 
     @include center;
@@ -33,14 +38,14 @@ $hamwater-title: #E34706;
 }
 
 .landing-nav {
+    @include center;
     padding-top: 151px;
-    padding-left: 5 px;
-    padding-right: 5px;
     display: inline-block;
 
     div.landing {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 1px;
+
+        width: auto;
     }
     
     a {
@@ -79,13 +84,16 @@ h1, h2, h3, h4, h5, h6 { @extend %quattro; }
 
 nav#landing {
     border-bottom-color: $hamwater-title;
+    background-color: #191818
 }
+
 nav.navbar {
     margin: 0;
 
     a {
         text-transform: uppercase;
         font-size: 16px;
+        color: $scotch-primary;
     }
 
     .navbar-brand {
