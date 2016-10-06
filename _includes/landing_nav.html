@@ -1,9 +1,9 @@
 
-  <row class="landing-nav">
+  <div class="row row-centered landing-nav">
     {% for item in site.data.nav.landing_nav %}
-      <div class="col-sm-4 landing">
+      <div class="col-sm-4 col-centered landing">
         <a href="{{item.url}}">{{item.text | upcase}}</a>
       </div>
     {% endfor %}
-  </row>
+  </div>
 

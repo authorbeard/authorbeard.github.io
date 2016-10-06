@@ -1,17 +1,23 @@
-landing_nav:
+basic_nav:
+    - { url: '/resume', text: 'Resume'}
+    - { url: '/about', text: 'About' }
+    - { url: 'https://github.com/authorbeard/authorbeard.github.io', text: 'Source' }
+
+general_nav:
+    - { url: '/', text: 'Home' }
+    - { url: '/resume', text: 'Resume'}
     - { url: '/code', text: 'Code'}
     - { url: '/copy', text: 'Copy'}
     - { url: '/fiction', text: 'Fiction'}
     - { url: '/blog', text: 'Hamwater'}
 
-general_nav:
-    - { url: '/', text: 'Home' }
-    - { url: '/bio', text: 'Michael Nolan'}
-    - { url: '/resume', text: 'Resume'}
-    - { url: '/about', text: 'About' }
-    - { url: 'https://github.com/authorbeard', text: 'Find me on Github' }
-
 about_site:
     - { url: 'http://scotch-io.github.io', text: 'Built on the Scotch Jekyll Bootstrap theme.'}
     - { url: 'https://scotch.io/tutorials/getting-started-with-jekyll-plus-a-free-bootstrap-3-starter-theme', text: 'Read the Tutorial' }
-    
+    - { url: 'https://github.com/authorbeard/authorbeard.github.io', text: 'Source' }
+
+landing_nav:
+    - { url: '/code', text: 'Code'}
+    - { url: '/copy', text: 'Copy'}
+    - { url: '/fiction', text: 'Fiction'}
+    - { url: '/blog', text: 'Hamwater'}

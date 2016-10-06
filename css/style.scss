@@ -1,6 +1,7 @@
 ---
 ---
 
+@import '../_sass/_hamwater-variables';
 @import '../_sass/bootstrap';
 @import '../_sass/syntax-highlighting';
 
@@ -20,8 +21,22 @@ $hamwater-title: #E34706;
     margin-right: auto;
 }
 
-body {
+@mixin title {
+    @extend %quattro;
+    color: $hamwater-title;
+    font-size: 36px;
+
+    &:hover {
+        @extend %cardo;
+        font-size: 1.75;
+        color: #f37c23;
+    }
+}
+
+html, body {
+    height: 100%;
     background: #000000;
+
 }
 
 
@@ -38,21 +53,35 @@ body {
 }
 
 .landing-nav {
+    &:before {
+        padding-top: 251px;
+    }
     @include center;
-    padding-top: 151px;
+    width: 100%;
     display: inline-block;
 
     div.landing {
-        padding-left: 1px;
-
+        padding-left: 10px;
+        padding-right: 10px;
         width: auto;
     }
     
+    
     a {
-        @extend %quattro;
-        font-size: 48px;
-        color: $hamwater-title;
+        @include title;
     }
+}
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
 }
 
 
@@ -63,10 +92,10 @@ section, header, footer, main, article, nav, aside { position: relative; }
 a {
     outline: none !important;
     text-decoration: none !important;
-    transition: all 225ms ease;
+    transition: all 225ms ease-in-out;
     color: $hamwater-title;
 
-    &:hover { color: #6165FF; }
+    &:hover { color: $scotch-primary; }
 }
 
 
@@ -283,7 +312,15 @@ aside {
 }
 
 .site-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     margin-top: 200px;
+    height: auto;
+    div.row {
+        text-align: -webkit-center;
+    }
+
 }
 
 .pagination-wrap {
