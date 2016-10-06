@@ -74,13 +74,11 @@ h1, h2, h3, h4, h5, h6 { @extend %quattro; }
 ::selection {
     background: #086AFF;
     color: $hamwater-title;
-<<<<<<< HEAD
-=======
+
 }
 
 nav#landing {
     border-bottom-color: $hamwater-title;
->>>>>>> working-branch
 }
 nav.navbar {
     margin: 0;
