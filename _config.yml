@@ -2,7 +2,7 @@
 title: Michael Nolan
 email: confusedbysoup@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Personal website for Michael Nolan, full-stack developer, novelist, copywriter, problem-solver and noted beard enthusiast. 
+  Web development projects, copywriting portfolio, fiction and blogging from Michael Nolan, full-stack developer, novelist, copywriter, problem-solver and noted beard enthusiast. 
 url: "http://authorbeard.github.io" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 github_username:  authorbeard

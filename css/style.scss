@@ -4,22 +4,57 @@
 @import '../_sass/bootstrap';
 @import '../_sass/syntax-highlighting';
 
-
 $scotch-primary: rgb(255, 69, 69);
 $scotch-secondary: #FF7B7B;
+<<<<<<< HEAD
 $hamwater-title: rgb(199, 83, 35);
+=======
+$hamwater-title: #E34706;
 
-%oswald { font-family: 'Oswald', sans-serif; }
+>>>>>>> working-branch
+
+%cardo { font-family: 'Cardo', serif; }
+%news { font-family: 'News Cycle', sans-serif;}
+%quattro { font-family: 'Quattrocento', serif;}
 %roboto { font-family: 'Roboto Condensed', sans-serif; }
 
+@mixin center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-body {
-    @extend %roboto;
-    font-size: 18px;
-    line-height: 30px;
+.alert {
+
+    @include center;
+    @extend %cardo;
+    color: $hamwater-title;
+    font-size: 60px;
+    line-height: auto;
     padding-top: 51px;
     -webkit-font-smoothing: antialiased;
+
 }
+
+.landing-nav {
+    padding-top: 151px;
+    padding-left: 5 px;
+    padding-right: 5px;
+    display: inline-block;
+
+    div.landing {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    a {
+        @extend %quattro;
+        font-size: 48px;
+        color: $hamwater-title;
+    }
+}
+
+
 p {
     margin-bottom: 30px;
 }
@@ -28,19 +63,28 @@ a {
     outline: none !important;
     text-decoration: none !important;
     transition: all 225ms ease;
-    color: $scotch-secondary;
+    color: $hamwater-title;
 
     &:hover { color: #6165FF; }
 }
+
+
 .btn {
     text-transform: uppercase;
     font-weight: 400;
-    @extend %oswald;
+    @extend %news;
 }
-h1, h2, h3, h4, h5, h6 { @extend %oswald; }
+h1, h2, h3, h4, h5, h6 { @extend %quattro; }
 ::selection {
     background: #086AFF;
     color: $hamwater-title;
+<<<<<<< HEAD
+=======
+}
+
+nav#landing {
+    border-bottom-color: $hamwater-title;
+>>>>>>> working-branch
 }
 nav.navbar {
     margin: 0;
@@ -55,7 +99,7 @@ nav.navbar {
 
         i {
             transition: inherit;
-            color: $scotch-primary;
+            color: $hamwater-title;
             transform: scale(1);
         }
 
@@ -81,7 +125,7 @@ h1.special {
     overflow: hidden;
     margin: 0;
     text-transform: uppercase;
-    @extend %oswald;
+    @extend %news;
     font-size: 69px;
     line-height: 69px;
     font-weight: 700;
@@ -202,7 +246,7 @@ h1.special {
             font-size: 12px;
             line-height: 1.5;
             text-transform: uppercase;
-            @extend %oswald;
+            @extend %news;
         }
     }
 
@@ -228,7 +272,7 @@ aside {
     font-size: 17px;
     color: #525252;
     margin: 16px 0;
-    @extend %oswald;
+    @extend %quattro;
 
     span {
         text-transform: uppercase;
