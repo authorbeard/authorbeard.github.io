@@ -1,8 +1,9 @@
-<div class="container-fluid">
+
   <row class="landing-nav">
     {% for item in site.data.nav.landing_nav %}
-      <col><a href="{{item.url}}">{{item.text}}</col>
+      <div class="col-md-4 landing">
+        <a href="{{item.url}}">{{item.text | upcase}}</a>
+      </div>
     {% endfor %}
   </row>
 
-</div>

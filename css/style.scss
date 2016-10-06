@@ -4,29 +4,46 @@
 @import '../_sass/bootstrap';
 @import '../_sass/syntax-highlighting';
 
-
 $scotch-primary: rgb(255, 69, 69);
 $scotch-secondary: #FF7B7B;
 $hamwater-title: #E34706;
+
 
 %cardo { font-family: 'Cardo', serif; }
 %news { font-family: 'News Cycle', sans-serif;}
 %quattro { font-family: 'Quattrocento', serif;}
 %roboto { font-family: 'Roboto Condensed', sans-serif; }
 
-body {
+@mixin center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    @extend %quattro;
-    font-size: 18px;
-    line-height: 30px;
+.alert {
+
+    @include center;
+    @extend %cardo;
+    color: $hamwater-title;
+    font-size: 60px;
+    line-height: auto;
     padding-top: 51px;
     -webkit-font-smoothing: antialiased;
 
 }
 
-row.landing-nav {
+.landing-nav {
+    padding-top: 151px;
+    padding-left: 5 px;
+    padding-right: 5px;
+    display: inline-block;
+
+    div.landing {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     
-    col a {
+    a {
         @extend %quattro;
         font-size: 48px;
         color: $hamwater-title;
