@@ -21,7 +21,13 @@
                 {% endfor %}
             {% endif %}
         </aside>
-        <div class="excerpt">{{ post.excerpt }}</div>
+        <div class="excerpt">
+            {% if post.lead_text %}
+                {{ post.lead_text }}
+            {% else %}
+                {{ post.excerpt }}
+            {% endif %}
+        </div>
         <a href="{{ post.url | prepend: site.baseurl }}" class="read-more btn btn-info btn-lg">Read More <i class="fa fa-angle-right"></i></a>
     </div>
 </div>

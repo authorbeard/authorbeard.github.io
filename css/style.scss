@@ -311,7 +311,7 @@ h1.special {
 aside {
     font-size: 12px;
     color: #525252;
-    margin: 0;
+    margin: 10px 0 0 0;
     @extend %quattro;
 
     span {
