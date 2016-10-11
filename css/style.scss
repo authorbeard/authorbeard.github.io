@@ -140,7 +140,7 @@ nav.navbar.hamwater {
     text-align: center;
     padding: 0 15px;
     margin: 50px 0 100px;
-
+    background-color: #383636;
     p {
         max-width: 800px;
         margin: 25px auto 0;
@@ -357,6 +357,13 @@ pre {
         padding-top: 2px;
         padding-bottom: 2px;
         border: 2px solid black;
+    }
+
+    h4 {
+        @extend %news;
+        color: white;
+        text-align: -webkit-center;
+
     }
 }
 

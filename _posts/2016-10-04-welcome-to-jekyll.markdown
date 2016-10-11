@@ -1,5 +1,5 @@
 ---
-layout: digest
+layout: default
 title:  "Welcome to Jekyll!"
 date:   2016-10-04 18:15:35 -0400
 featured_image: '/assets/guggs inspector.png'
