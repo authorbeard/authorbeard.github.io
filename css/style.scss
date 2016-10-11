@@ -25,7 +25,7 @@
     &:hover {
         @extend %cardo;
         font-size: 1.75;
-        color: #f37c23;
+        color: $hamwater-title-hover;
     }
 }
 
@@ -35,6 +35,9 @@ html, body {
 
 }
 
+main {
+    background-color: inherit;
+}
 
 .alert {
 
@@ -142,8 +145,10 @@ nav.navbar.hamwater {
     margin: 50px 0 100px;
     background-color: #383636;
     p {
+        @extend %news;
         max-width: 800px;
         margin: 25px auto 0;
+        color: white;
     }
 }
 h1.special {
@@ -184,7 +189,7 @@ h1.special {
     position: relative;
     box-shadow: 0 0.15em 0.35em 0 rgba(0, 0, 0, 0.135);
     margin-bottom: 125px;
-
+    background-color: white;
     .inner-guts { padding: 50px; }
 
     h2 {
