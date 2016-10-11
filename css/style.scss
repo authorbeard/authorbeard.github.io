@@ -5,10 +5,6 @@
 @import '../_sass/bootstrap';
 @import '../_sass/syntax-highlighting';
 
-$scotch-primary: rgb(255, 69, 69);
-$scotch-secondary: #FF7B7B;
-$hamwater-title: #E34706;
-
 
 %cardo { font-family: 'Cardo', serif; }
 %news { font-family: 'News Cycle', sans-serif;}
@@ -111,18 +107,18 @@ h1, h2, h3, h4, h5, h6 { @extend %quattro; }
 
 }
 
-nav#landing {
+nav.hamwater {
     border-bottom-color: $hamwater-title;
     background-color: #191818
 }
 
-nav.navbar {
+nav.navbar.hamwater {
     margin: 0;
 
     a {
         text-transform: uppercase;
         font-size: 16px;
-        color: $scotch-primary;
+        color: $hamwater-navtext;
     }
 
     .navbar-brand {
@@ -384,4 +380,16 @@ pre {
         font-size: 22px;
         line-height: 35px;
     }
+}
+
+.sidebar {
+    image {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+.digest {
+    margin-bottom: 5px;
+    border-bottom-color: $hamwater-title;
 }

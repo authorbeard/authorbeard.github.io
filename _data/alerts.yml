@@ -1,2 +1,3 @@
-messages:
-  - { type: coming_soon, text: "Like a lush beard, this site needs to grow out a bit. It'll be back in public when it's come in."}
+# messages:
+#   - { type: coming_soon, text: "Like a lush beard, this site needs to grow out a bit. It'll be back in public when it's come in."}
+#     - { type: under_construction, text: "Down for maintenance, but we'll be back soon."}
