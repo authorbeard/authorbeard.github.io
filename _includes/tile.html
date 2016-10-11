@@ -14,21 +14,14 @@
         <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
         <aside>
             {{ post.date | date: "%m.%d.%y" }}
-            {% if post.categories != empty %}
+            {% if post.tags != empty %}
                 &middot;
-                {% for category in post.categories %}
-                    <span>{{ category }}</span>
+                {% for tag in post.tags %}
+                    <span>{{ tag }}</span>
                 {% endfor %}
             {% endif %}
         </aside>
         <div class="excerpt">{{ post.excerpt }}</div>
         <a href="{{ post.url | prepend: site.baseurl }}" class="read-more btn btn-info btn-lg">Read More <i class="fa fa-angle-right"></i></a>
-        {% if post.categories != empty %}
-        <div class="tags">
-            {% for tag in post.tags %}
-            <span>{{ tag }}</span>
-            {% endfor %}
-        </div>
-        {% endif %}
     </div>
 </div>

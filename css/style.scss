@@ -36,7 +36,7 @@ html, body {
 }
 
 main {
-    background-color: inherit;
+    background-color: $hamwater-page-background;
 }
 
 .alert {
@@ -142,8 +142,8 @@ nav.navbar.hamwater {
 .title-group {
     text-align: center;
     padding: 0 15px;
-    margin: 50px 0 100px;
-    background-color: #383636;
+    margin: 50px 0 2px;
+    background-color: $hamwater-page-background;
     p {
         @extend %news;
         max-width: 800px;
@@ -186,18 +186,20 @@ h1.special {
 }
 
 .tile {
+    @extend %news;
     position: relative;
     box-shadow: 0 0.15em 0.35em 0 rgba(0, 0, 0, 0.135);
     margin-bottom: 125px;
     background-color: white;
-    .inner-guts { padding: 50px; }
+    .inner-guts { padding: 0px 50px 50px 50px; }
 
     h2 {
+        @extend %cardo;
         margin: 0;
-        font-size: 100px;
+        font-size: 80px;
         font-weight: 400;
         letter-spacing: -0.05em;
-        line-height: 100px;
+        line-height: 85px;
     }
 
     .featurette {
@@ -257,7 +259,7 @@ h1.special {
     }
 
     .excerpt {
-        font-size: 35px;
+        font-size: 24px;
         font-weight: 300;
         line-height: 49px;
         color: #484848;
@@ -288,6 +290,12 @@ h1.special {
         max-width: 175px;
         position: relative;
         padding-right: 75px;
+        background-color: $hamwater-navtext;
+        border-color: $hamwater-title-hover;
+
+        &:hover {
+            background-color: $hamwater-title;
+        }
 
         i {
             position: absolute;
@@ -301,9 +309,9 @@ h1.special {
 }
 
 aside {
-    font-size: 17px;
+    font-size: 12px;
     color: #525252;
-    margin: 16px 0;
+    margin: 0;
     @extend %quattro;
 
     span {
@@ -313,6 +321,7 @@ aside {
 }
 
 .site-footer {
+    position: relative;
     height: auto;
     div.row {
         text-align: -webkit-center;
