@@ -1,13 +1,16 @@
-{% if post.featured_image %}
-  <div class="col-sm-3 sidebar">
-    <image src="{{post.featured_image}}">
-  </div>
-{% endif %}
-{% if post.technologies %}
-  {% for tech in post.technologies %}
-    <p>{{tech}}</p>
-  {% endfor %}
-{% endif %}
+<div class="col-sm-3 pull-left sidebar">
+  {% if post.featured_image %}
+      <img class="img-responsive" src="{{post.featured_image}}">
+  {% endif %}
+    <h4>This is the title</h4>
+    <h4>technologies: </h4>
+    <span>some technologies</span>
 
+  {% if post.technologies %}
+    {% for tech in post.technologies %}
+      <p>{{tech}}</p>
+    {% endfor %}
+  {% endif %}
+</div>
 
 

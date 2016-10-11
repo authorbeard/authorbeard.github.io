@@ -308,10 +308,6 @@ aside {
 }
 
 .site-footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    margin-top: 200px;
     height: auto;
     div.row {
         text-align: -webkit-center;
@@ -353,6 +349,40 @@ pre {
     margin: 75px -100px;
 }
 
+.sidebar {
+    border-right: 2px solid black;
+    font-size: 18px;
+
+    img {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border: 2px solid black;
+    }
+}
+
+.digest {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    border-bottom-color: $hamwater-title;
+    background-color: #383636;
+    font-color: $hamwater-title;
+
+    .row {
+        border-bottom: 1px;
+        border-bottom-color: $hamwater-title;
+        margin-bottom: 5px; 
+
+    }
+
+    h4 {
+        color: $hamwater-title;
+        text-align: -webkit-center;
+    }
+}
+
 
 @media only screen and (max-width : 991px) {
     pre {
@@ -364,6 +394,11 @@ pre {
 @media only screen and (max-width : 480px) {
     .tile .featurette, .topper {
         height: 300px;
+    }
+
+    .sidebar img {
+        display: block;
+        margin: auto;
     }
 
     h1.special,
@@ -382,14 +417,3 @@ pre {
     }
 }
 
-.sidebar {
-    image {
-        height: 100px;
-        width: 100px;
-    }
-}
-
-.digest {
-    margin-bottom: 5px;
-    border-bottom-color: $hamwater-title;
-}

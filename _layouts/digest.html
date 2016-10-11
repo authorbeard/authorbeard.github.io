@@ -4,10 +4,8 @@
     <div class="row">
       {% for post in site.posts | where: "category", page.title.downcase %}
         {% include sidebar.html %}
-        {{ post.content }}
-      {% endfor %}
 
-      {{ page.title }}
+      {% endfor %}
     </div>
   </div>
 
