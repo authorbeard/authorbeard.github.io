@@ -1,5 +1,5 @@
 ---
-layout: detail
+
 title: Spinner
 featured_image: '/assets/spinner library page.png'
 category: code

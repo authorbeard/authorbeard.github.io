@@ -35,7 +35,7 @@ html, body {
 
 }
 
-main {
+.title-group + main {
     background-color: $hamwater-page-background;
 }
 
@@ -147,7 +147,7 @@ nav.navbar.hamwater {
     p {
         @extend %news;
         max-width: 800px;
-        margin: 25px auto 0;
+        margin: 10px auto 0;
         color: white;
     }
 }
@@ -196,7 +196,7 @@ h1.special {
     h2 {
         @extend %cardo;
         margin: 0;
-        font-size: 80px;
+        font-size: 65px;
         font-weight: 400;
         letter-spacing: -0.05em;
         line-height: 85px;
@@ -321,7 +321,7 @@ aside {
 }
 
 .site-footer {
-    position: relative;
+    
     height: auto;
     div.row {
         text-align: -webkit-center;

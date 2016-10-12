@@ -9,7 +9,7 @@ general_nav:
     - { url: '/code', text: 'Code'}
     - { url: '/copy', text: 'Copy'}
     - { url: '/fiction', text: 'Fiction'}
-    - { url: '/blog', text: 'Hamwater'}
+    - { url: '/hamwater', text: 'Hamwater'}
 
 about_site:
     - { url: 'http://scotch-io.github.io', text: 'Built on the Scotch Jekyll Bootstrap theme.'}
@@ -20,4 +20,4 @@ landing_nav:
     - { url: '/code', text: 'Code'}
     - { url: '/copy', text: 'Copy'}
     - { url: '/fiction', text: 'Fiction'}
-    - { url: '/blog', text: 'Hamwater'}
+    - { url: '/hamwater', text: 'Hamwater'}

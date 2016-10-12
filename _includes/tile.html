@@ -1,15 +1,19 @@
 <div class="tile">
-    {% if post.featured_image or post.featured_video_id %}
-    <a href="{{ post.url | prepend: site.baseurl }}" class="featurette">
-        {% if post.featured_image %}
-        <span class="img" style="background-image: url('{{ post.featured_image }}');"></span>
-        {% endif %}
 
-        {% if post.featured_video_id %}
-        <iframe src="https://www.youtube.com/embed/{{ post.featured_video_id }}" frameborder="0" allowfullscreen></iframe>
-        {% endif %}
-    </a>
+    {% if post.featured_image or post.featured_video_id %}
+        <a href="{{ post.url | prepend: site.baseurl }}" class="featurette">
+            {% if post.featured_image %}
+            <span class="img" style="background-image: url('{{ post.featured_image }}');"></span>
+            {% endif %}
+
+            {% if post.featured_video_id %}
+            <iframe src="https://www.youtube.com/embed/{{ post.featured_video_id }}" frameborder="0" allowfullscreen></iframe>
+            {% endif %}
+        </a>
+    {% else %}
+        <a href="{{ post.url | prepend: site.baseurl }}" class="featurette"><span class="featurette img" style="background-image: url('{{ site.baseurl }}/assets/default.jpg');"></span></a>
     {% endif %}
+    
     <div class="inner-guts">
         <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
         <aside>

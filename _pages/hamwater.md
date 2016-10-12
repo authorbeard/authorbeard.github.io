@@ -1,5 +1,7 @@
 ---
 layout: default
 title: Hamwater
-permalink: /blog/
+permalink: /hamwater/
+id: blog
+lead_text: Someday, I'll understand soup. 
 ---
