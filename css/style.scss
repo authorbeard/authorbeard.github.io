@@ -1,6 +1,11 @@
 ---
 ---
 
+site::selection {
+        color: black;
+        background: gray;
+}
+
 @import '../_sass/_hamwater-variables';
 @import '../_sass/bootstrap';
 @import '../_sass/syntax-highlighting';
@@ -49,6 +54,12 @@ html, body {
     padding-top: 51px;
     -webkit-font-smoothing: antialiased;
 
+}
+
+main {
+    .container {
+        min-height: 640px; 
+    }
 }
 
 .landing-nav {
@@ -342,6 +353,7 @@ aside {
 }
 
 .site-footer {
+    position: relative;
     height: auto;
     div.row {
         text-align: -webkit-center;

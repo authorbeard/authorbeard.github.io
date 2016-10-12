@@ -33,18 +33,8 @@
     </p>
     <aside>
         {{ page.date | date: "%m.%d.%y" }}
-        {% if page.id == "blog" %}
-            <div class="btn-group hamwater">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     posts <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    {% for post in site.posts | where: "category", "hamwater" %}
-                        <li><a href="{{page.url | prepend: site.data.global.baseurl}}">{{post.title}}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
-        {% elsif page.categories != empty %}
+
+        {% if page.categories != empty %}
             &middot;
             {% for category in page.categories %}
                 <span>{{ category }}</span>
