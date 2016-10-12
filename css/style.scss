@@ -37,7 +37,6 @@ site::selection {
 html, body {
     height: 100%;
     background: #000000;
-
 }
 
 .title-group + main {
@@ -60,6 +59,18 @@ main {
     .container {
         min-height: 640px; 
     }
+}
+
+.post {
+    @include center;
+    position: relative;
+    max-width: 900px;
+    margin: 50px 15px;
+    @extend %news;
+    font-size: 18px;
+    background-color: white;
+
+
 }
 
 .landing-nav {
@@ -223,7 +234,14 @@ h1.special {
     box-shadow: 0 0.15em 0.35em 0 rgba(0, 0, 0, 0.135);
     margin-bottom: 125px;
     background-color: white;
-    .inner-guts { padding: 0px 50px 50px 50px; }
+    .inner-guts { 
+        margin: auto; 
+        height: auto;
+    }
+
+    &.row {
+        margin-bottom: 25px;
+    }
 
     h2 {
         @extend %cardo;
@@ -238,7 +256,8 @@ h1.special {
         position: relative;
         display: block;
         overflow: hidden;
-        margin-bottom: 15px;
+        margin: 10px;
+        padding: 0;
         width: 100%;
         height: 550px;
         background-color: #e8e8e8;
@@ -297,7 +316,7 @@ h1.special {
         color: #484848;
 
         p {
-            margin: 0;
+            margin: 0 0 50px 0;
         }
     }
 
@@ -317,13 +336,16 @@ h1.special {
     }
 
     .read-more {
-        margin-top: 50px;
+        margin-right: 15px;
+        margin-bottom: 5px;
         width: 100%;
         max-width: 175px;
-        position: relative;
+        position: absolute;
         padding-right: 75px;
         background-color: $hamwater-navtext;
         border-color: $hamwater-title-hover;
+        bottom: 0;
+        right: 0;
 
         &:hover {
             background-color: $hamwater-title;
@@ -421,6 +443,13 @@ pre {
         margin-left: 0;
         margin-right: 0;
     }
+
+}
+
+@media only screen and (max-width: 710px){
+    .tile a {
+        font-size: 32px;
+    }
 }
 
 @media only screen and (max-width : 480px) {
@@ -441,6 +470,10 @@ pre {
     .tile .excerpt {
         font-size: 22px;
         line-height: 35px;
+    }
+
+    .tile h2 {
+        font-size: 30px;
     }
 }
 
