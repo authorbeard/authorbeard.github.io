@@ -49,7 +49,7 @@ baseurl: "" # does not include hostname
 
 # Outputting
 permalink:     /:title.html
-paginate: 10
+paginate: 5
 paginate_path: /page:num
 timezone:      null
 
