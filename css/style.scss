@@ -24,7 +24,7 @@
 
     &:hover {
         @extend %cardo;
-        font-size: 1.75;
+        transform: scale(1.75);
         color: $hamwater-title-hover;
     }
 }
@@ -55,6 +55,7 @@ html, body {
     &:before {
         padding-top: 251px;
     }
+
     @include center;
     width: 100%;
     display: inline-block;
@@ -341,13 +342,12 @@ aside {
 }
 
 .site-footer {
-
     height: auto;
     div.row {
         text-align: -webkit-center;
     }
-
 }
+
 
 .pagination-wrap {
     text-align: center;
@@ -383,30 +383,18 @@ pre {
     margin: 75px -100px;
 }
 
-.contents-sidebar {
-    display: inline-block;
-    float: right;
+
+
+.sidenav.hamwater {
+    @extend %news;
+    color: $hamwater-title;
+    padding-top: 15px;
     position: fixed;
-    font-size: 12px;
-    margin: 0;
-    padding: 0;
-
-    h4.header {
-        @extend %quattro;
-        color: $hamwater-title;
-        text-align: left;
-    }
-
-    img {
-        padding-top: 2px;
-        padding-bottom: 2px;
-        border: 2px solid black;
-    }
+    padding: 0px 0px 5px 10px;
 
     h4 {
-        @extend %news;
-        color: white;
-        text-align: -webkit-center;
+        text-transform: uppercase;
+        font-family: inherit;
     }
 
     p {
@@ -414,28 +402,6 @@ pre {
     }
 }
 
-.digest {
-    position: relative;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 5px;
-    padding-top: 5px;
-    border-bottom-color: $hamwater-title;
-    background-color: #383636;
-    font-color: $hamwater-title;
-
-    .row {
-        border-bottom: 1px;
-        border-bottom-color: $hamwater-title;
-        margin-bottom: 5px; 
-
-    }
-
-    h4 {
-        color: $hamwater-title;
-        text-align: -webkit-center;
-    }
-}
 
 
 @media only screen and (max-width : 991px) {

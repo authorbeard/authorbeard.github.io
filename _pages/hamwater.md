@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: hamwater-main
 title: Hamwater
 permalink: /hamwater/
 id: blog

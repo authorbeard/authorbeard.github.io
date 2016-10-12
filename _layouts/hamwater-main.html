@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-sm-12">
+                    <div class="col-md-9" role="main">
                         {% for post in site.posts %}
                             {% if post.category == page.id %}
                                 {% include tile.html %}
@@ -16,6 +16,16 @@
                         {% endfor %}
 
                         {% include pagination.html %}
+                    </div>
+                    <div class="col-md-3" role="complementary">
+                        <nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs">
+                            <ul class="sidenav hamwater">
+                            <h4>Posts:</h4>
+                                {% for post in site.posts | where: "category", {{page.id}} %}
+                                    <p><a href="{{ post.url | prepend: site.data.global.baseurl }}">{{post.title}}</a></p>
+                                {% endfor %}
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
