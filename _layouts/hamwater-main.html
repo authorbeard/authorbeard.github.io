@@ -5,7 +5,7 @@
     {% else %}
         {% include title-group.html %}
         <main>
-            <div class="container hamwater" role="main">
+            <div class="container hamwater">
                 {% for post in site.posts %}
                     {% if post.category == page.id %}
                         {% include tile.html %}

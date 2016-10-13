@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Computer.can_eat = Array.new(bags_ofdicks, all_ofthem)
+title:  Computer.can_eat = Array.new (bags_ofdicks, all_ofthem)
 date:   2016-01-05 10:20:53 -0500
 category: blog
 tags: fails, feels, code, Ruby

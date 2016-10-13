@@ -4,12 +4,13 @@ basic_nav:
     - { url: 'https://github.com/authorbeard/authorbeard.github.io', text: 'Source' }
 
 general_nav:
-    - { url: '/', text: 'Home' }
-    - { url: '/resume', text: 'Resume'}
     - { url: '/code', text: 'Code'}
     - { url: '/copy', text: 'Copy'}
     - { url: '/fiction', text: 'Fiction'}
     - { url: '/hamwater', text: 'Hamwater'}
+    - { url: '/resume', text: 'Resume'}
+    - { url: '/', text: 'Home' }
+
 
 about_site:
     - { url: 'http://scotch-io.github.io', text: 'Built on the Scotch Jekyll Bootstrap theme.'}

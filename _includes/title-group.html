@@ -13,7 +13,9 @@
 
     <h1 class="special">
         <span>
-        {% if page.title %}
+        {% if include.ptitle %} 
+            {{ include.ptitle }}   
+        {% elsif page.title %}
             {{ page.title }}
         {% else %}
             {{ site.data.global.title }}
@@ -23,7 +25,9 @@
     
     {% if page.id %}
     <p class="lead">
-        {% if page.lead_text %}
+        {% if include.ptext %}
+            {{ include.ptext }}
+        {% elsif page.lead_text %}
             {{ page.lead_text }}
         {% elsif post.lead_text %}
             {{ post.lead_text }}

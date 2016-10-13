@@ -2,6 +2,7 @@
 title:  "Spinner for Rails"
 date:   2016-04-21
 category: blog
+feature_image: '/assets/spinner library page.png'
 permalink: /spinner-rails/
 ---
 
