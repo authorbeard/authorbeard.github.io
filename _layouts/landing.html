@@ -1,15 +1,13 @@
 {% include landing_header.html %}
+  {% if site.data.alerts.down %}
+      {% include alerts.html %}
+  {% else %}
 
-    <main>
-        <div class="container">
-          {% if site.data.alerts.down %}
-            {% include alerts.html %}
-          {% else %}
-            {% include landing_nav.html %}
-          {% endif %}  
-        </div>      
-    </main>
-  
+      <main>
+          <div class="container">
+              {% include landing_nav.html %}
+          </div>      
+      </main>
+  {% endif %}
 
-
-{% include footer.html %}
+{% include footer.html %}  
