@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Live to Fail, Fail to Live"
 date:   2016-02-09
 category: blog

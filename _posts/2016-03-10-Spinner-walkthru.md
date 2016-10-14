@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Spinner Walk-through"
 date:   2016-03-10
 category: blog

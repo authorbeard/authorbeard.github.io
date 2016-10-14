@@ -63,4 +63,9 @@
             margin-top: 350px;
         }
     }
-
+@media only screen
+    and (max-width: 320px) {
+        h1.special{
+            font-size: 55px;
+        }
+    }

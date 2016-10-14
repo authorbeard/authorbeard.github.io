@@ -1,0 +1,48 @@
+<div class="post-title"> 
+    {% if page.featured_image or page.featured_video_id %}
+        <div class="topper image post">
+            <div class="image-screen">
+            {% if page.featured_image %}
+                <img src="{{ page.featured_image }}"></img>
+            {% endif %}
+            </div>
+
+            {% if page.featured_video_id %}
+            <iframe src="https://www.youtube.com/embed/{{ page.featured_video_id }}" frameborder="0" allowfullscreen></iframe>
+            {% endif %}
+
+            <div class="post-details">
+                <span>
+                    <aside>
+                        {{ page.date | date: "%m.%d.%y" }}
+                    </aside>
+
+                    <h1 class="special">
+                        {% if include.ptitle %} 
+                            {{ include.ptitle }}   
+                        {% elsif page.title %}
+                            {{ page.title }}
+                        {% else %}
+                            {{ site.data.global.title }}
+                        {% endif %}
+                    </h1>
+
+                    {% if page.source %}
+                        <aside class="source">
+                            <a href="{{page.source}}">(see on Github)</a>
+                        </aside>
+                    {% endif %}
+                    
+                    {% if page.tech %}
+                        <aside class="tech">Tech:
+                            {% for item in page.tech %}
+                                {{ item }}
+                            {% endfor %}
+                        </aside>
+                    {% endif %}
+                </span>
+            </div>
+
+        </div>
+    {% endif %}
+</div>

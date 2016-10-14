@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Exhibitionist CLI Gem"
 date:   2016-01-25
 category: blog

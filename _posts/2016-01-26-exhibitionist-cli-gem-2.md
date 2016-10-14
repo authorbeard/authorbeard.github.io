@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Exhibitionist CLI Gem 2: This Time, It’s Codable"
 date:   2016-01-26
 category: blog

@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Exhibitionist CLI Gem 3: Where I Found the Devil"
 date:   2016-01-27
 category: blog

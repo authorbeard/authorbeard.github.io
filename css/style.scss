@@ -76,6 +76,67 @@ main {
         text-align: center;
     }
 
+    .post-title {
+
+        .image-screen {
+
+            &::before {
+
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(0,0,0, 0.5);
+                -moz-transition: background .3s linear;
+                -webkit-transition: background .3s linear;
+                -o-transition: background .3s linear;
+                transition: background .3s linear;
+            }
+        }
+
+        img {
+            position: absolute;
+            vertical-align: middle;
+            width: 100%;
+            height: 100%;
+            opacity: .2;
+            border: 3px solid white;
+        }
+
+        .topper h1.special {
+            vertical-align: middle;
+            color: $hamwater-title;
+            font-size: 55px;
+            padding-top: 125px;
+        }
+
+        span {
+                background-color: black;
+            }
+
+        aside {
+            position:absolute;
+            text-align: center;
+            left: 0;
+            right: 0;
+            margin: auto;
+            color: $hamwater-title;
+            font-size: 18px;
+        }
+
+        .tech {
+            bottom: 0;
+        }
+
+        .source {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    }
+
 
 }
 

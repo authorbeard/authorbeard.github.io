@@ -1,14 +1,16 @@
 <div class="title-group"> 
-    {% if page.featured_image or page.featured_video_id %}
-        <div class="topper">
-            {% if page.featured_image %}
-            <span class="img" style="background-image: url('{{ page.featured_image }}');">
-            {% endif %}
+    {% if include.pimg != 'nil' %}
+        {% if page.featured_image or page.featured_video_id %}
+            <div class="topper">
+                {% if page.featured_image %}
+                <span class="img" style="background-image: url('{{ page.featured_image }}');">
+                {% endif %}
 
-            {% if page.featured_video_id %}
-            <iframe src="https://www.youtube.com/embed/{{ page.featured_video_id }}" frameborder="0" allowfullscreen></iframe>
-            {% endif %}
-        </div>
+                {% if page.featured_video_id %}
+                <iframe src="https://www.youtube.com/embed/{{ page.featured_video_id }}" frameborder="0" allowfullscreen></iframe>
+                {% endif %}
+            </div>
+        {% endif %}
     {% endif %}
 
     <h1 class="special">
