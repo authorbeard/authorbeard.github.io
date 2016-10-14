@@ -27,7 +27,6 @@ $(window).load(function() {
   document.addEventListener('scroll', function(){
     if (document.body.className==' category-blog'){
       if (document.body.scrollTop != 0){
-        debugger;
         setHamwater()
       }
       if (document.body.scrollTop === 0){

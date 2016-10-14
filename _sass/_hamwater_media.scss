@@ -1,0 +1,66 @@
+@media only screen and (max-width : 991px) {
+    pre {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+
+@media only screen and (max-width : 480px) {
+    .tile .featurette, .topper {
+        height: 300px;
+    }
+
+    h1.special,
+    .tile h2 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .tile .inner-guts {
+        padding: 15px 25px;
+    }
+
+    .tile .excerpt {
+        font-size: 22px;
+        line-height: normal;
+    }
+
+    .tile h2 {
+        font-size: 30px;
+    }
+
+    .post {
+        font-size: 18px;
+    }
+
+    .landing-nav div {
+        display: block;
+
+    }
+
+    .category-blog .title-group p.lead {
+        margin-top: -15px;
+    }
+}
+
+/* ipad */
+@media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: landscape){
+
+        .site-footer{
+            margin-top: 100px;
+        }
+    }
+
+@media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait){
+        .site-footer{
+            margin-top: 350px;
+        }
+    }
+

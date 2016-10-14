@@ -9,6 +9,7 @@ site::selection {
 @import '../_sass/_hamwater-variables';
 @import '../_sass/bootstrap';
 @import '../_sass/syntax-highlighting';
+@import '../_sass/_hamwater_media';
 
 
 %cardo { font-family: 'Cardo', serif; }
@@ -322,6 +323,7 @@ h1.special {
 
         p {
             margin: 0 0 50px 0;
+            padding-bottom: 30px;
         }
     }
 
@@ -341,8 +343,7 @@ h1.special {
     }
 
     .read-more {
-        margin-right: 15px;
-        margin-bottom: 5px;
+        margin: 15px 15px 5px 0px;
         width: 100%;
         max-width: 175px;
         position: absolute;
@@ -465,42 +466,10 @@ figcaption {
     }
 }
 
-
-@media only screen and (max-width : 991px) {
-    pre {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
+.highlight {
+    margin: auto;
+    background: $hamwater-highlight-background;
 }
 
 
-@media only screen and (max-width : 480px) {
-    .tile .featurette, .topper {
-        height: 300px;
-    }
-
-    h1.special,
-    .tile h2 {
-        font-size: 40px;
-        line-height: 44px;
-    }
-
-    .tile .inner-guts {
-        padding: 15px 25px;
-    }
-
-    .tile .excerpt {
-        font-size: 22px;
-        line-height: normal;
-    }
-
-    .tile h2 {
-        font-size: 30px;
-    }
-
-    .post {
-        font-size: 18px;
-    }
-}
 

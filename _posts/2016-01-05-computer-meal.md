@@ -8,10 +8,10 @@ tags: fails, feels, code, Ruby
 
 Probably not the best moment to start this blog. But then figuring out when that would be can be added to the array of skills I don’t have. 
 
-{% highlight ruby %}
+```ruby
 skills_I_lack = Array.new(1000000000, [])  
 skills_I_lack[45568] << best_time_to_start_blog
-{% endhighlight %}
+```
 
 There. I wrote that out in Ruby. Sort of. I also stole that from someone on Slack. (if yer in L-V and you wrote that, sorry for the lack of attribution. It was a rough day.) So I guess I’ve learned something. But of late, what I’m thinking instead isn’t, “Hey, I’m making progress on Ruby, and by extension, becoming a programmer.” No, instead it’s, “Welp, this ain’t working out, either. End of the line for me, boyo. Didn’t I see that the Home Depot near me is hiring?”
 
