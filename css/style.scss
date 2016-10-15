@@ -129,15 +129,10 @@ main {
     font-size: 18px;
     background-color: white;
 
-
-    p {
-        margin-bottom: 10px;
-
-        &:first-child:first-letter {
-            @extend %cardo;
-            font-size:36px;
-            color: $hamwater-title;
-        }
+    div:first-child:first-letter {
+        @extent %cardo;
+        font-size: 36px;
+        color: $hamwater-title;
     }
 }
 

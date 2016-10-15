@@ -10,7 +10,7 @@ So I'm on the last project of the object-oriented Ruby unit of Learn-Verified, F
 
 Cue a coupla days figuring out Jekyll and a handful of drafts, most of which are prolly not gonna see the light of day. Even [in the dark moments]({{ site.baseurl }}/computer-meal), I usually realize that this is all I wanna be doing right now. So writing gets left out. 
 
-###**Screw That, Let's Get Started** 
+###** Screw That, Let's Get Started** 
 
 So it’s good news this time: I’ve successfully written my first Ruby gem. Well … anyway, the guts of it work. And the CLI works. It’s not ready to be shipped yet, I don’t think, and I doubt it’ll wind up on RubyGems. But everything works the way it’s supposed to. Well, the main things that meet the assignment’s specifications work. There’s another feature that I just tweaked this morning that makes some bits run better but now invalidates something else I just got finalized over the weekend. 
 

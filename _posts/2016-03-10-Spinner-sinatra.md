@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Spinner Walk-through"
-date:   2016-03-10
+title: "Spinner for Sinatra"
+date: 2016-03-10
 category: blog
-permalink: /spinner/
+permalink: /spinner-sinatra/
+tech: Ruby, Rails, Sinatra, Mechanize, Nokogiri
 ---
-
 
 Let’s talk about [Spinner](https://github.com/authorbeard/spinner-sinatra-assessment), a Sinatra app I created for a Flatiron School Learn-Verified assessment. 
 
@@ -124,25 +124,23 @@ Hey, wanna know something? The two pieces of code I’m most pleased with here m
 
 The first is from app/db/seeds.rb:
 
-```
+```ruby
 
   require 'csv'
 
 
-@lib=CSV.read("test/authorbeard.csv", {headers: true, header_converters: :symbol})
+  @lib=CSV.read("test/authorbeard.csv", {headers: true, header_converters: :symbol})
 
 
-binding.pry
-  @lib.each {|r|
-    album=Album.find_or_create_by(title: r[:title])
-    album.artist=Artist.find_or_create_by(name: r[:artist])
-    album.rel_date=r[:released].to_i
-    album.rel_id=r[:release_id].to_i
-    album.search_q="#{r[:artist]} #{r[:release_id]}"
-    album.save
-  }
-
-
+  binding.pry
+    @lib.each {|r|
+      album=Album.find_or_create_by(title: r[:title])
+      album.artist=Artist.find_or_create_by(name: r[:artist])
+      album.rel_date=r[:released].to_i
+      album.rel_id=r[:release_id].to_i
+      album.search_q="#{r[:artist]} #{r[:release_id]}"
+      album.save
+    }
 
 ```
 
@@ -198,7 +196,7 @@ Here’s what you have to be logged in to do:
 
 But that’s not all of it. You also don’t see certain buttons unless you’re logged in. In index.rb, for example, there’s this: 
 
-```
+```erb
   <% unless logged_in %>
     <button type="submit" name="login"><a href="/login">Log me in</a></button>
     <button type="submit" name="login"><a href="/signup">Sign me up!</a></button>
@@ -207,7 +205,7 @@ But that’s not all of it. You also don’t see certain buttons unless you’re
 
 For the main layout, there’s just one, at the very end: 
 
-```
+```erb
   <button name="new"><a href="/albums/new">New Album</a></button>
   <button name="all"><a href="/all-albums">All albums</a></button>
   <button name="home"><a href="/home">Take me home</a></button>
@@ -221,7 +219,7 @@ For the library page, which has a pretty straightforward route (get ‘/all-albu
 
 Here’s the code: 
 
-```
+```erb
 <td><% if @fan && @fan.albums.include?(a) %>
             <h3>Got it!</he>
     <% else %>
@@ -237,7 +235,7 @@ If yer not logged in and you try to add it, it routes you to the login page.
 
 Oh, and back on the library page, you'll see a link over on the far right. This changes based on the album's status. 
 
-```
+```erb
       <td><button>
             <% if a.alb_url %>
               <a href="http://www.discogs.com/<%=a.alb_url%>">See on Discogs.com</a>
@@ -254,7 +252,7 @@ Going over to albums/show.erb, there are some other things:
 
 If you’re logged in, you get to see all the spins info, as below: 
 
-```
+```erb
 <% if logged_in %>
   <% if @album.spins.empty? %>
     <button><a href="/albums/<%=@album.id%>/spin">Spin it!</a></button>
@@ -281,7 +279,7 @@ What you can do, though—and this is what I like the most out of all of this, s
 
 Which brings me back to the first bits of working code I even put together. This was a holdover from the original brainstorming and sketching I did, before I started committing to a data structure and setting up my models and migrations and whatnot. Here it is: 
 
-```
+```ruby
   def get_tracks
   1.      agent=Mechanize.new
   2.      search=agent.get("http://www.discogs.com").form(id: "site_search")
@@ -302,7 +300,7 @@ Originally, I had this in a concerns folder and was going to use ActiveSupport. 
 
 But anyway, I only really need this here. And I’m pretty sure I don’t need all of it. But I had it already in my notes from fooling around with scraping the page and seeding my database. Turns out all I had to do was stick this code in the right place and call it from the right one. Well, as mentioned, I just had to stick it in the album.rb model, then call it from my controller. Here’s the controller route: 
 
-```
+```ruby
   get '/get-tracks/:id' do
     @album=Album.find(params[:id])
     @album.get_tracks
@@ -338,8 +336,8 @@ CODE JOKES!
 
 Anyway, video walkthrough below. It'll be below. Now it’s time for Rails. 
 
+[Watch the Video Walkthru](https://youtu.be/Mc-2crfooAM)
 
-<h2><a href="https://youtu.be/Mc-2crfooAM">Video Walkthrough</a></h2>
 
 
 

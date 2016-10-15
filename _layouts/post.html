@@ -1,9 +1,9 @@
 {% include header.html %}
   
-  <div class="featured-image" style="background-image: url('{{ page.featured_image }}');">
-  </div>
+  {% include post-featured-image.html %}
 
-  {% include title-group.html ptitle='hamwater' ptext='Someday, I\'ll understand soup.' pimg='nil' %}
+  {% include title-group.html ptitle='hamwater' ptext='Someday, I\'ll understand soup.' ptitle_img='nil' %}
+  
   {% include post-title.html %}
   
   <div class="container post">
