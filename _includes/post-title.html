@@ -1,23 +1,20 @@
 <div class="post-title"> 
     {% if page.featured_image or page.featured_video_id %}
-        <div class="topper image post">
-            <div class="image-screen">
+        <div class="topper">
             {% if page.featured_image %}
-                <img src="{{ page.featured_image }}"></img>
+                <div class="img" style="background-image: url('{{ page.featured_image }}')"></div>
             {% endif %}
-            </div>
 
             {% if page.featured_video_id %}
             <iframe src="https://www.youtube.com/embed/{{ page.featured_video_id }}" frameborder="0" allowfullscreen></iframe>
             {% endif %}
 
             <div class="post-details">
-                <span>
-                    <aside>
+                    <aside class="date"><span>
                         {{ page.date | date: "%m.%d.%y" }}
-                    </aside>
+                    </span></aside>
 
-                    <h1 class="special">
+                    <h1 class="special"><span class="title">
                         {% if include.ptitle %} 
                             {{ include.ptitle }}   
                         {% elsif page.title %}
@@ -25,24 +22,23 @@
                         {% else %}
                             {{ site.data.global.title }}
                         {% endif %}
-                    </h1>
+                    </span></h1>
 
                     {% if page.source %}
-                        <aside class="source">
+                        <aside class="source"><span>
                             <a href="{{page.source}}">(see on Github)</a>
-                        </aside>
+                        </span></aside>
                     {% endif %}
-                    
+
                     {% if page.tech %}
-                        <aside class="tech">Tech:
+                        <aside class="tech"><span>Tech:
                             {% for item in page.tech %}
                                 {{ item }}
                             {% endfor %}
-                        </aside>
+                        </span></aside>
                     {% endif %}
-                </span>
-            </div>
 
+            </div>
         </div>
     {% endif %}
 </div>

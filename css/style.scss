@@ -62,82 +62,85 @@ main {
     }
 }
 
-.post {
-    @include center;
-    position: relative;
-    max-width: 900px;
-    margin: 0px auto;
-    @extend %news;
-    font-size: 18px;
-    background-color: white;
-
+.category-blog {
     .title-group {
-        background: $hamwater-navtext;
-        text-align: center;
+    background: $hamwater-navtext;
+    text-align: center;
     }
 
     .post-title {
+        width: 100%;
+        background-color: darkgray;
+        position: relative;
+        margin-top: -2px;
 
-        .image-screen {
-
-            &::before {
-
-                content: "";
-                display: block;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                background: rgba(0,0,0, 0.5);
-                -moz-transition: background .3s linear;
-                -webkit-transition: background .3s linear;
-                -o-transition: background .3s linear;
-                transition: background .3s linear;
-            }
-        }
-
-        img {
-            position: absolute;
-            vertical-align: middle;
+        .img {
             width: 100%;
-            height: 100%;
             opacity: .2;
-            border: 3px solid white;
         }
 
         .topper h1.special {
-            vertical-align: middle;
+            font-size: 60px;
             color: $hamwater-title;
-            font-size: 55px;
-            padding-top: 125px;
+            padding-top: 5px;
         }
 
         span {
                 background-color: black;
             }
 
+        .title {
+            width: 100%;
+        }
+
         aside {
-            position:absolute;
-            text-align: center;
-            left: 0;
-            right: 0;
-            margin: auto;
+            margin-top: 0;
+            position: relative;
+            bottom: 0;
             color: $hamwater-title;
             font-size: 18px;
         }
 
-        .tech {
-            bottom: 0;
+        .date {
+            display: inline;
+            left: 0;
         }
 
         .source {
+
             margin-top: 10px;
             font-size: 18px;
         }
+
+        row {
+            margin-top: 10px;
+        }
     }
+}
+
+.container.post {
+    @include clearfix;
+}
+
+.post {
+    @include center;
+    position: relative;
+    max-width: 900px;
+    margin-top: -385px;
+    @extend %news;
+    font-size: 18px;
+    background-color: white;
 
 
+    p {
+        margin-bottom: 10px;
+
+        &:first-child:first-letter {
+            @extend %cardo;
+            font-size:36px;
+            color: $hamwater-title;
+        }
+    }
 }
 
 .landing-nav {
@@ -254,6 +257,8 @@ nav.navbar.hamwater {
     padding: 0 15px;
     margin: 50px 0 2px;
     background-color: $hamwater-page-background;
+    z-index: 2;
+
     p {
         @extend %news;
         max-width: 800px;
@@ -442,11 +447,14 @@ aside {
 }
 
 .site-footer {
-    position: relative;
-    height: auto;
+    @include clearfix;
+    text-align: -webkit-center;
+
     div.row {
         text-align: -webkit-center;
     }
+
+
 }
 
 
@@ -455,7 +463,7 @@ aside {
 }
 
 .topper {
-    height: 500px;
+    height: 550px;
     position: relative;
 
     .img {

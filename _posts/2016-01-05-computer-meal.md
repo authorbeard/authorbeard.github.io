@@ -4,8 +4,8 @@ title:  Computer.can_eat = Array.new (bags_ofdicks, all_ofthem)
 date:   2016-01-05 10:20:53 -0500
 category: blog
 tags: fails, feels, code, Ruby
-featured_image: '/assets/default.jpg'
-tech: ruby, rails
+featured_image: '/assets/frustration.jpg'
+tech: ruby
 ---
 
 Probably not the best moment to start this blog. But then figuring out when that would be can be added to the array of skills I don’t have. 
