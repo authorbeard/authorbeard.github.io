@@ -14,7 +14,7 @@ HAHAHAHAHAHAHAHA No it doesn’t. I mean, that was the original idea, and I stil
 
 But that’s not the point at the moment. The point at the moment is to do a project incorporating what I’ve learned about Ruby on Rails thus far. And looking back at my last post [link], I guess I’m happy enough with it — 40 days ago, I knew dick all about Rails. Now I got a whole thing. So: 
 
-[Suckit Trebeck]
+!["Suckit, Trebek"](https://media.giphy.com/media/TbSPeUWjSY2ys/giphy.gif)
 
 <h2><strong>First Step: Data Structuring</strong></h2>
 
@@ -212,5 +212,3 @@ So there you have it. Standard video walk-thru will be down below.
 
 
 <h2><a href="https://youtu.be/rGOfb_ajrrM">Video Walkthrough</a></h2>
-
-[Spinner on github](https://github.com/authorbeard/spinner-rails-assessment)

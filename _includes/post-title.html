@@ -1,14 +1,6 @@
 <div class="post-title"> 
-    {% if page.featured_image or page.featured_video_id %}
+
         <div class="topper">
-            {% if page.featured_image %}
-                <div class="img" style="background-image: url('{{ page.featured_image }}')"></div>
-            {% endif %}
-
-            {% if page.featured_video_id %}
-            <iframe src="https://www.youtube.com/embed/{{ page.featured_video_id }}" frameborder="0" allowfullscreen></iframe>
-            {% endif %}
-
             <div class="post-details">
                     <aside class="date"><span>
                         {{ page.date | date: "%m.%d.%y" }}
@@ -36,9 +28,13 @@
                                 {{ item }}
                             {% endfor %}
                         </span></aside>
+                    {% else %}
+                        <aside class="tech"><span>Tags:
+                            {% for item in page.tags %}
+                                {{ item }}
+                            {% endfor %}
                     {% endif %}
 
             </div>
         </div>
-    {% endif %}
 </div>

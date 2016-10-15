@@ -4,6 +4,7 @@ title:  "Live to Fail, Fail to Live"
 date:   2016-02-09
 category: blog
 permalink: /live-to-fail/
+tags: code, fails, feels, Heart of a Champion
 ---
 
 So a coupla light bulbs just went on recently, regarding my middle-aged career switch: 
@@ -20,9 +21,11 @@ Hell, the last time I tried to start something major and decided it didn’t mat
 
 And here I am having meaningful insights in February. Maybe I’m just asking for trouble. 
 
-But starting on No. 3 — finding work, basically — seems pretty impossibly far off, which only makes the first two more surprising. And makes commemorating a good week all the more worth it. There’s plenty of despair still left out there. But I guess I discovered last week that there’s at least a floor to it. 
+But starting on No. 3 — finding work, basically — seems pretty impossibly far off, which only makes the first two more surprising. And makes commemorating a good week all the more worth it. There’s plenty of despair still left out there. But I guess I discovered last week that there’s at least a floor to it.
 
-**Time Is Never On My Side**
+!["Heart of a Champion"](https://media.giphy.com/media/3o6UBcw6B1QO4RcLXa/giphy.gif) 
+
+## **Time Is Never On My Side**
 
 Every time I step away for a minute from the daily stuff of learning to think about what I’m doing here, everything on my mind is shot through with time. Sometimes that’s a very positive thing: I feel like I escape time for a second whenever I get into a lab and have problems to solve, errors to decipher, bits of connective tissue to go Google (everyone else, it seems like, already has that stuff, but I gotta graft it on). That’s one of the signs that I’m on to something here that suits me somehow. That love might even be in the mix. 
 
