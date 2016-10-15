@@ -130,7 +130,7 @@ main {
     background-color: white;
 
     div:first-child:first-letter {
-        @extent %cardo;
+        @extend %cardo;
         font-size: 36px;
         color: $hamwater-title;
     }
