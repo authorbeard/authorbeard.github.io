@@ -11,17 +11,17 @@
         height: 300px;
     }
 
-    h1.special,
-    .tile h2 {
-        font-size: 40px;
-        line-height: 44px;
+    h1.special {
+      font-size: 4.3em;
+      line-height: 1em;
     }
+
 
     .tile .inner-guts {
         padding: 15px 25px;
 
         margin: -15px 0 -15px 0;
-        h1.special, .tile h2 {
+        .tile h2 {
           font-size: 4.5em;
           line-height: 1em;
         }
@@ -32,9 +32,6 @@
         line-height: normal;
     }
 
-    .tile h2 {
-        font-size: 30px;
-    }
 
     .post {
         font-size: 18px;
