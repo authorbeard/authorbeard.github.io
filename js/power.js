@@ -19,6 +19,8 @@ $(window).load(function() {
   var pdHeight = document.querySelector('.post-details').clientHeight
   var containerPost = document.querySelector('.container.post')
   function setPostTop(){
+    console.log("tgHeight:" + tgHeight)
+    console.log("pdHeight:" + pdHeight)
     containerPost.style.cssText = "top: " + (tgHeight+pdHeight-30) + "px;"
   }
   setPostTop()
