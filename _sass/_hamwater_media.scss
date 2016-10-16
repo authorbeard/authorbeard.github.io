@@ -17,15 +17,22 @@
     }
 
 
-    .tile .inner-guts {
+    .tile {
+      .inner-guts {
         padding: 15px 25px;
-
         margin: -15px 0 -15px 0;
-        .tile h2 {
-          font-size: 4.5em;
+        
+        h2 {
+          font-size: 4.2em;
           line-height: 1em;
         }
+      }
+
+      .read-more {
+          bottom: 15px;
+      }
     }
+
 
     .tile .excerpt {
         font-size: 22px;
@@ -116,18 +123,6 @@
         padding: 0px;
     }
 
-    .inner-guts {
-        margin: -15px 0 -15px 0;
-      }
-
-    h1.special, .tile h2 {
-          font-size: 4.5em;
-          line-height: 1em;
-    }
-
-    .container.post {
-        margin-top: -200px;
-    }
 }
 
 /* Portrait */

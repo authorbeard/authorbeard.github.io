@@ -4,7 +4,7 @@
 @import '../_sass/_hamwater-variables';
 @import '../_sass/bootstrap';
 @import '../_sass/syntax-highlighting';
-@import '../_sass/_hamwater_media';
+
 
 
 %cardo { font-family: 'Cardo', serif; }
@@ -550,5 +550,4 @@ figcaption {
     background: $hamwater-highlight-background;
 }
 
-
-
+@import '../_sass/_hamwater_media';
