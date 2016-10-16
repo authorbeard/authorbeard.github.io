@@ -15,6 +15,15 @@ $(window).load(function() {
   var aside = document.querySelector('aside')
   var titleBar = document.querySelectorAll('.title-group, .post-title')
   var navBar = document.querySelector('nav')
+  var tgHeight = document.querySelector('.title-group').clientHeight
+  var pdHeight = document.querySelector('.post-details').clientHeight
+  var containerPost = document.querySelector('.container.post')
+  function setPostTop(){
+    containerPost.style.cssText = "top: " + (tgHeight+pdHeight-30) + "px;"
+  }
+  setPostTop()
+
+
   var setHamwater=function(){
     // debugger;
     titleBar[0].style.cssText="top: -37px; position: fixed; width:100%; z-index:1100"
