@@ -113,13 +113,13 @@
         padding: 0px;
     }
 
-    .h1 special, .tile h2 {
+    .inner-guts {
+ 
+        margin: -15px 0 -15px 0;
+        h1.special, .tile h2 {
         font-size: 4.5em;
         line-height: 1em;
     }
-
-    .inner-guts {
-        margin: -15px 0 -15px 0;
     }
 
     .container.post {
