@@ -229,6 +229,7 @@ h1, h2, h3, h4, h5, h6 { @extend %quattro; }
 ::selection {
     background: #086AFF;
     color: $hamwater-title;
+    word-wrap: break-word;
 
 }
 
@@ -331,6 +332,7 @@ h1.special {
         font-weight: 400;
         letter-spacing: -0.05em;
         line-height: 85px;
+        word-wrap: break-word;
     }
 
     .featurette {
