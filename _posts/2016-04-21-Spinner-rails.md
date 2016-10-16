@@ -8,7 +8,7 @@ source: https://github.com/authorbeard/spinner-rails-assessment
 tech: Ruby, Rails 4, Devise, OAuth 1.0, ActiveRecord, Mechanize
 permalink: /spinner-rails/
 ---
-Trust me, what you needed but did know you needed is you needed a Rails version of Spinner, the app that lets you see how you interact with your music across genres and services. 
+Trust me, what you needed but did not know you needed is you needed a Rails version of Spinner, the app that lets you see how you interact with your music across genres and services. 
 
 HAHAHAHAHAHAHAHA No it doesn’t. I mean, that was the original idea, and I still wanna fart around until I get to that point, but for the moment, it’s an app that lets you create a record collection and track how you use it. In fact, it only lets you track what you listen to and when you listened last. 
 
