@@ -1,0 +1,17 @@
+{% include header.html %}
+
+  {% if site.data.alerts.down %}
+      {% include alerts.html %}
+  {% else %}
+    {% include title-group.html %}
+    <div class='container-fluid' style="position: relative; margin: 5px auto 50px auto; text-align: center;">
+      <div class='row'>
+        <div class='col-sm-12 col-md-9'>
+          <h1 class="special">Coming Soon. Enjoy this in the mean time (I always do):</h1>
+          <img src='https://media.giphy.com/media/TbSPeUWjSY2ys/giphy.gif' alt="Suckit, Trebek" style="display: block; clear: both; margin: 50px auto;" />
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+{% include footer.html %}

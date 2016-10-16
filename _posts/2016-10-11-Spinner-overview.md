@@ -1,7 +1,7 @@
 ---
 title: Spinner
 date: 2016-10-11
-featured_image: '/assets/spinner library page.png'
+featured_image: '/assets/spinner default.png'
 category: code
 source: 'github.com/authorbeard/spinner-angular'
 tech: Ruby, Rails, Bootcamp 4, HTML 5, AngularJS, OAuth 1 & 2
