@@ -6,7 +6,7 @@
 
 }
 
-@media only screen and (max-width : 480px), screen and (max-device-width: 667px) {
+@media only screen and (max-width : 480px) {
     .tile .featurette, .topper {
         height: 300px;
     }
@@ -117,12 +117,12 @@
     }
 
     .inner-guts {
- 
         margin: -15px 0 -15px 0;
-        h1.special, .tile h2 {
+      }
+
+    h1.special, .tile h2 {
           font-size: 4.5em;
           line-height: 1em;
-        }
     }
 
     .container.post {
