@@ -76,7 +76,6 @@ main {
         .topper h1.special {
             font-size: 60px;
             color: $hamwater-title;
-            padding-top: 5px;
         }
 
         span {
@@ -286,6 +285,7 @@ h1.special {
     line-height: 69px;
     font-weight: 700;
     color: $hamwater-title;
+    word-wrap: break-word;
 
     span {
         display: inline-block;
