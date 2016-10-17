@@ -123,7 +123,7 @@ main {
     @include center;
     position: relative;
     max-width: 900px;
-    margin-top: -350px;
+    /*margin-top: -350px;*/
     @extend %news;
     font-size: 18px;
     background-color: white;
@@ -290,7 +290,7 @@ h1.special {
     span {
         display: inline-block;
         position: relative;
-        padding: 0 15px;
+        /*padding: 0 15px;*/
         max-width: 1000px;
 
         &:before, &:after {
@@ -452,7 +452,7 @@ aside {
 
     span {
         text-transform: uppercase;
-        margin: 0 5px;
+        /*margin: 0 5px;*/
     }
 }
 
@@ -473,7 +473,7 @@ aside {
 }
 
 .topper {
-    height: 550px;
+    /*height: 550px;*/
     position: relative;
 
     .img {
