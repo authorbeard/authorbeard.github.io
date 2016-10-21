@@ -154,9 +154,6 @@ main {
 
 
     .landing-nav {
-        &:before {
-            padding-top: 251px;
-        }
 
         @include center;
         width: 100%;
