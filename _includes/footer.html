@@ -1,5 +1,5 @@
 
-    <footer class="site-footer">
+    <footer class="site-footer {% if include.foot_class %}{{ include.foot_class }}{% endif %}">
         <a class="text-muted" href="{{ site.data.nav.about_site[0].url}}">{{site.data.nav.about_site[0].text}}</a>
     </footer>
 

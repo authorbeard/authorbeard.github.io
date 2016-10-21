@@ -26,7 +26,7 @@
     &:hover {
         @extend %cardo;
         transform: scale(1.75);
-        color: $hamwater-title-hover;
+        color: $hamwater-default-hover;
     }
 }
 
@@ -150,24 +150,28 @@ main {
         
 }
 
-.landing-nav {
-    &:before {
-        padding-top: 251px;
-    }
+.landing {
 
-    @include center;
-    width: 100%;
-    display: inline-block;
 
-    div.landing {
-        padding-left: 10px;
-        padding-right: 10px;
-        width: auto;
-    }
-    
-    
-    a {
-        @include title;
+    .landing-nav {
+        &:before {
+            padding-top: 251px;
+        }
+
+        @include center;
+        width: 100%;
+        display: inline-block;
+
+        div.landing {
+            padding-left: 10px;
+            padding-right: 10px;
+            width: auto;
+        }
+        
+        
+        a {
+            @include title;
+        }
     }
 }
 
@@ -194,11 +198,12 @@ a {
     transition: all 225ms ease-in-out;
     color: $hamwater-title;
 
-    &:hover { color: $scotch-primary; }
+    &:hover { color: $hamwater-default-hover; }
 }
 
 
 .btn-group.hamwater {
+
     button {
         background-color: black;
         border-color: $hamwater-title;
@@ -206,7 +211,7 @@ a {
 
         &:hover {
             color: black;
-            background-color: $hamwater-title-hover;
+            background-color: $hamwater-button-hover;
         }
 
         .dropdown-menu a {
@@ -218,14 +223,17 @@ a {
 }
 
 .btn {
-    text-transform: uppercase;
-    font-weight: 400;
+
+    transition: none;
+    /*text-transform: uppercase;
+    font-weight: 400;*/
     @extend %news;
 
 }
+
 h1, h2, h3, h4, h5, h6 { @extend %quattro; }
 ::selection {
-    background: black;
+    background: white;
     color: $hamwater-title;
 
 }
@@ -424,7 +432,7 @@ h1.special {
         position: absolute;
         padding-right: 75px;
         background-color: $hamwater-navtext;
-        border-color: $hamwater-title-hover;
+        border-color: $hamwater-button-hover;
         bottom: 0;
         right: 0;
 

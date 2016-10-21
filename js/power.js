@@ -40,7 +40,7 @@ $(window).load(function() {
   })
 
   document.addEventListener('scroll', function(){
-    if (document.body.className==' category-blog'){
+    if (document.body.className ==' category-blog'){
       if (document.body.scrollTop >= 25){
         setHamwater()
       }
