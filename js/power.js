@@ -1,3 +1,7 @@
+var body=$('body')
+var titleBar = $('.title-group, .post-title')
+var navBar = $('nav')
+
 /*====================================
 =            DOM IS READY            =
 ====================================*/
@@ -15,19 +19,10 @@ $(function() {
 ========================================*/
 $(window).load(function() {
 
-  var titleBar = $('.title-group, .post-title')
-  switch ($('body').attr('class')){   
-    case 'blog':
-      $('.title-group, .post-title').children('aside').remove() 
-      break;
-    case 'category-blog':
-      setPostTop()
-      break;
-
+  if (body.attr('class') == 'category-blog'){   
+    setPostTop()
+    $('h1 a').attr('href', '/hamwater')
   }
-
-  // setPostTop()
-  // setHamwater()
 
 });
 
@@ -45,16 +40,19 @@ $(window).resize(function() {
 =            WINDOW IS SCROLLED            =
 ==========================================*/
 $(window).scroll(function() {
+  console.log(body.scrollTop())
 
-  if ($('body').hasClass('category-blog')){
-    if (document.body.scrollTop >= 25){
+  if (body.hasClass('category-blog')){
+    if (body.scrollTop() >= 25){
+      console.log("whut")
       setHamwater()
     }
     if (document.body.scrollTop === 0){
-      titleBar.forEach(function(div){ 
-        div.style.cssText=""
-      })
-      navBar.style.cssText=""
+      debugger;
+    //   titleBar.each(function(){ 
+    //     this.style.cssText=""
+    //   })
+    //   navBar.style.cssText=""
     }
   }
 
@@ -62,27 +60,24 @@ $(window).scroll(function() {
 
 
 function centerLanding (){
-  if ($('body').hasClass('landing')){
+  if (body.hasClass('landing')){
       var mainTop = Math.floor(($(window).height() - $('.landing-nav').height()) / 2)
       $('main').css('top', mainTop)
     }
 }
 
 var setPostTop = function(){
-debugger;
-  var navBar = $('nav')
   var topperHeight = $('.topper').height();
   var pdHeight = $('.post-details').height();
   var containerPost = $('.container.post');
 
-
-
-  console.log("topperHeight:" + topperHeight);
-  console.log("pdHeight:" + pdHeight);
   containerPost.css("top", (pdHeight-topperHeight));
 };
 
 var setHamwater=function(){
+    titleBar.first().css({'top':'-37px', 'position':'fixed', 'width':'100%'})
+    titleBar.last().css('margin-top', '100px')
+    navBar.css('z-index', 0)
 
   // titleBar[0].style.cssText="top: -37px; position: fixed; width:100%; z-index:1100"
   // titleBar[1].style.cssText="margin-top: 100px;"

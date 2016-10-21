@@ -35,17 +35,19 @@
             {{ post.lead_text }}
         {% endif %}
     </p>
-    <aside>
-        {{ page.date | date: "%m.%d.%y" }}
+    {% if page.layout != 'post' %}
+        <aside>
+            {{ page.date | date: "%m.%d.%y" }}
 
-        {% if page.categories != empty %}
-            &middot;
-            {% for category in page.categories %}
-                <span>{{ category }}</span>
-            {% endfor %} 
+            {% if page.categories != empty %}
+                &middot;
+                {% for category in page.categories %}
+                    <span>{{ category }}</span>
+                {% endfor %} 
 
+            {% endif %}
+        </aside>
         {% endif %}
-    </aside>
     {% endif %}
 
 </div>
