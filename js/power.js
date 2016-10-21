@@ -23,7 +23,6 @@ $(window).load(function() {
     setPostTop()
     $('h1 a').attr('href', '/hamwater')
   }
-
 });
 
 
@@ -40,22 +39,17 @@ $(window).resize(function() {
 =            WINDOW IS SCROLLED            =
 ==========================================*/
 $(window).scroll(function() {
-  console.log(body.scrollTop())
 
   if (body.hasClass('category-blog')){
     if (body.scrollTop() >= 25){
-      console.log("whut")
       setHamwater()
     }
     if (document.body.scrollTop === 0){
-      debugger;
-    //   titleBar.each(function(){ 
-    //     this.style.cssText=""
-    //   })
-    //   navBar.style.cssText=""
+      titleBar.each(function(){ 
+        this.style = ''
+      })
     }
   }
-
 });
 
 
@@ -77,11 +71,6 @@ var setPostTop = function(){
 var setHamwater=function(){
     titleBar.first().css({'top':'-37px', 'position':'fixed', 'width':'100%'})
     titleBar.last().css('margin-top', '100px')
-    navBar.css('z-index', 0)
-
-  // titleBar[0].style.cssText="top: -37px; position: fixed; width:100%; z-index:1100"
-  // titleBar[1].style.cssText="margin-top: 100px;"
-  // navBar.style.cssText="opacity: 0; transition: ease-in-out;"
 } 
 
 
