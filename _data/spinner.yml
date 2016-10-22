@@ -1,0 +1,19 @@
+
+# spinner:
+#     - {version: 'angular', source: 'spinner-angular' }
+
+projects:
+  - name: 'spinner'
+    details: 
+      description: 'Spinner description goes here, bruh. Make sure to edit and junk later on if this works'
+      versions: 
+        - name: 'sinatra'
+          source: 'spinner-sinatra-assessment'
+          tech: 'ruby, sinatra, SQL, Mechanize, Nokogiri'
+        - name: 'rails'
+          source: 'spinner-rails-assessment'
+          tech: 'ruby, rails 4, Devise, Paperclip, OAuth2.0, Figaro, CSS3, Bootstrap, JavaScript, JQuery, AJAX'
+        - name: 'angular'
+          source: 'spinner-agular'
+          tech: 'ruby, rails 4, AngularJS, angular-devise, UI-Router, OAuth1.0, Oauth 2.0, API creation and integration, Javascript, Bootstrap 4, Mechanize, Paperclip, Figaro'
+
