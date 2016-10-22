@@ -6,6 +6,7 @@ projects:
   - name: 'spinner'
     details: 
       description: 'Spinner description goes here, bruh. Make sure to edit and junk later on if this works'
+      featured_image: 'spinner default.png'
       versions: 
         - name: 'sinatra'
           source: 'spinner-sinatra-assessment'
@@ -14,6 +15,6 @@ projects:
           source: 'spinner-rails-assessment'
           tech: 'ruby, rails 4, Devise, Paperclip, OAuth2.0, Figaro, CSS3, Bootstrap, JavaScript, JQuery, AJAX'
         - name: 'angular'
-          source: 'spinner-agular'
+          source: 'spinner-angular'
           tech: 'ruby, rails 4, AngularJS, angular-devise, UI-Router, OAuth1.0, Oauth 2.0, API creation and integration, Javascript, Bootstrap 4, Mechanize, Paperclip, Figaro'
-
+          demo: 'http://www.google.com'
