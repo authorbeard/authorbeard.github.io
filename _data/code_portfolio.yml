@@ -1,0 +1,23 @@
+
+# spinner:
+#     - {version: 'angular', source: 'spinner-angular' }
+
+projects:
+  - name: 'spinner'
+    details: 
+      description: "You don\'t simply consume music. It\'s more than white noise. More than a soundtrack. It\'s your emotional heartbeat, nutrition for your soul. It\'s a vital part of your experience of being alive. \n\nSpinner shows you how it weaves through your days and defines your seasons, across formats and platforms, services and genres."
+      featured_image: 'spinner default.png'
+      versions: 
+        - name: 'sinatra'
+          source: 'spinner-sinatra-assessment'
+          tech: 'ruby, sinatra, SQL, Mechanize, Nokogiri'
+        - name: 'rails'
+          source: 'spinner-rails-assessment'
+          tech: 'ruby, rails 4, Devise, Paperclip, Faraday, OAuth2.0, custom OAuth1.0 strategy, Figaro, CSS3, Bootstrap, JavaScript, JQuery, AJAX'
+        - name: 'angular'
+          source: 'spinner-angular'
+          tech: 'ruby, rails 4, AngularJS, angular-devise, UI-Router, OAuth1.0 (custom strategy), Oauth 2.0, API creation and integration, Javascript, Bootstrap 4, Mechanize, Paperclip, Figaro'
+          demo: 'http://www.google.com'
+  # - name: 'petBnB'
+  #   details:
+  #     description: "Pets are family. Let them come on vacation with you."
