@@ -1,0 +1,95 @@
+.code main {
+  background-color: black;
+}
+
+.wrapper {
+  height: 70vh;
+  display: inline-block;
+}
+
+.code-portfolio {
+
+  .row {
+    height: 75%;
+    border: 1px solid white;
+  }
+
+  .column {
+    margin-top: 10vh;
+  }
+
+  .project-nav {
+    
+  }
+
+  .project-details {
+    color: $hamwater-title;
+
+    .version-details {
+      text-align: center;
+
+      .tech-list {
+
+      }
+    }
+    
+
+    h2 { 
+      margin-top: 0px;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    h4 {
+      color: white;
+    }
+
+    p {
+      line-height: .85em;
+      padding: 0;
+      margin: 10px 0;
+      word-wrap: normal;
+    }
+
+    
+    i {
+      font-size: 16px;
+      color: $hamwater-navtext;
+      border-radius: 14%;
+      background: $hamwater-page-background;
+      height: .65em;
+      width: .73em;
+      line-height: .72em;
+
+      &:hover {
+        color: $hamwater-title;
+      }
+
+    }
+
+
+
+    .tech-list {
+      display: none;
+    }
+  }
+
+  .next-project {
+    text-align: center;
+    font-size: 75px;
+
+    &:hover {
+      color: $hamwater-default-hover;
+    }
+
+    &::after {
+      clear: both;
+    }
+  }
+
+
+
+}

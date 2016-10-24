@@ -6,6 +6,12 @@
 
 }
 
+@media only screen and (max-width: 760px) {
+  .row {
+    margin-top: 0;
+  }
+}
+
 @media only screen and (max-width : 480px) {
     .tile .featurette, .topper {
         height: 300px;

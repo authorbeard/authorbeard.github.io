@@ -1,0 +1,56 @@
+
+<div class="container-fluid code-portfolio">
+   {% for item in site.data.code_portfolio.projects %}
+    <div class="{{item.name}} wrapper">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 column project-nav">
+                <img class="img-responsive" src='
+                    {% if item.details.featured_image %}
+                        /assets/{{ item.details.featured_image}}
+                    {% else %}
+                        /assets/default.jpg
+                    {% endif %}'>
+                <div class='btn-group-sm'>
+                    {% for v in item.details.versions %}
+                        <div class="btn"><a href='{{v.source | prepend: site.data.global.source_base }}'> {{v.name | capitalize }} Version Source </a></div>
+                        {% if v.demo %}
+                             | <span class='btn'><a href='{{v.demo}}'>Demo This Project</a></span>
+                        {% endif %} 
+                    {% endfor %}                   
+                </div>
+            </div><!--project nav-->
+
+            <div class="col-xs-12 col-sm-8 col-md-8 column project-details">
+                <h2 class="code-portfolio">{{item.name}}</h2>
+                <h4>{{item.details.description}}</h4>
+                <div class="version-details">
+                    {% if item.details.versions.size > 1 %}
+                        {% for v in item.details.versions%}
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 {{v.name}}">
+                                <h3>{{v.name | capitalize}} <i class="fa fa-plus-square-o" aria-hidden='true'></i></h3>
+
+                                <div class="tech-list {{v.name}}">
+                                    {% assign tech=v.tech | split: ', ' %}
+                                    {% for t in tech %}
+                                        <p>{{t}}</p>
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                        {% endfor%}
+                    {% else %}
+                        <div class="col-xs-12 col-sm-8 col-md-8 column">
+                            <h3>Stack:</h3>
+                            <p>{{ item.details.versions.tech }}</p>
+                        </div>    
+
+                    {% endif %}
+                </div>
+            </div><!-- project details -->
+        </div><!--row-->
+        <div class="next-project">
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+    </div>
+    {% endfor %}
+</div>

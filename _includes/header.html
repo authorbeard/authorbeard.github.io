@@ -86,9 +86,11 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     {% for item in site.data.nav.general_nav %}
+                        {% if item.text != page.title %}
                             <li>
                                 <a href="{{ item.url }}">{{ item.text }}</a>
                             </li>
+                        {% endif %}
                     {% endfor %}
                 </ul>
             </div>

@@ -23,6 +23,17 @@ $(window).load(function() {
     setPostTop()
     $('h1 a').attr('href', '/hamwater')
   }
+
+  if (body.attr('class') == 'code'){
+    $('.version-details i').click(function(){
+      $(this).toggleClass('fa-plus-square-o fa-minus-square-o')
+      $(this).parent().siblings().first().slideToggle()
+    })
+
+    $('.next-project').click(function(){
+      $(this).parent().slideToggle('slow')
+    })
+  }
 });
 
 
@@ -72,5 +83,11 @@ var setHamwater=function(){
     titleBar.first().css({'top':'-37px', 'position':'fixed', 'width':'100%'})
     titleBar.last().css('margin-top', '100px')
 } 
+
+/*==========================================
+=      CODE PROJECT TECH LIST TOGGLE       =
+==========================================*/
+
+
 
 

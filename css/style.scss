@@ -6,7 +6,6 @@
 @import '../_sass/syntax-highlighting';
 
 
-
 %cardo { font-family: 'Cardo', serif; }
 %news { font-family: 'News Cycle', sans-serif;}
 %quattro { font-family: 'Quattrocento', serif;}
@@ -52,6 +51,7 @@ html, body {
 }
 
 main {
+    .margin-top: 50px;
     .container {
         min-height: 640px; 
     }
@@ -553,4 +553,6 @@ figcaption {
     background: $hamwater-highlight-background;
 }
 
+@import '../_sass/_code';
 @import '../_sass/_hamwater_media';
+@import '../_sass/_linkedin';
