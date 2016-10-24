@@ -18,6 +18,11 @@ projects:
           source: 'spinner-angular'
           tech: 'ruby, rails 4, AngularJS, angular-devise, UI-Router, OAuth1.0 (custom strategy), Oauth 2.0, API creation and integration, Javascript, Bootstrap 4, Mechanize, Paperclip, Figaro'
           demo: 'http://www.google.com'
-  # - name: 'petBnB'
-  #   details:
-  #     description: "Pets are family. Let them come on vacation with you."
+  - name: 'petBnB'
+    details:
+      description: "Pets are family. Don\'t stick them in the kennel while you go away. PetBnB finds vacation rentals that welcome your pet and people willing to bring your pet into their homes while you\'re away."
+      featured_image: 'vacation dog.jpeg'
+      versions:
+        - name: 'rails-angular'
+          source: 'authorbeard.github.io'
+          tech: 'Rails 5, Angular 2.0, Bootstrap 4, CSS3, HTML 5'
