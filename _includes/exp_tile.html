@@ -3,7 +3,7 @@
    {% for item in site.data.code_portfolio.projects %}
     <div class="{{item.name}} wrapper">
         <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-4 column project-nav">
+            <div class="col-xs-12 col-sm-6 column project-nav">
                 <img class="img-responsive" src='
                     {% if item.details.featured_image %}
                         /assets/{{ item.details.featured_image}}
@@ -20,13 +20,13 @@
                 </div>
             </div><!--project nav-->
 
-            <div class="col-xs-12 col-sm-8 col-md-8 column project-details">
+            <div class="col-xs-12 col-sm-6 column project-details">
                 <h2 class="code-portfolio">{{item.name}}</h2>
                 <h4>{{item.details.description}}</h4>
                 <div class="version-details">
                     {% if item.details.versions.size > 1 %}
                         {% for v in item.details.versions%}
-                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 {{v.name}}">
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 {{v.name}} stack-title">
                                 <h3>{{v.name | capitalize}} <i class="fa fa-plus-square-o" aria-hidden='true'></i></h3>
 
                                 <div class="tech-list {{v.name}}">
@@ -48,9 +48,18 @@
                 </div>
             </div><!-- project details -->
         </div><!--row-->
-        <div class="next-project">
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </div>
-    </div>
+
+            {% if forloop.first != true %}
+            <div class = "project-scroll prev">
+                <i class="fa fa-chevron-up prev" aria-hidden="true"></i>
+            </div>
+            {% endif %}
+            {% if forloop.last != true %}
+            <div class="project-scroll next">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            {% endif %}
+
+    </div><!--wrapper-->
     {% endfor %}
 </div>

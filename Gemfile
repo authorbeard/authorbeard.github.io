@@ -1,4 +1,4 @@
-ruby source 'https://rubygems.org' 
+source 'https://rubygems.org' 
 require 'json' 
 require 'open-uri' 
 

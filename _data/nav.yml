@@ -5,7 +5,7 @@ basic_nav:
 
 general_nav:
     - { url: '/code', text: 'Code'}
-    # - { url: '/copy', text: 'Copy'}
+    - { url: '/copy', text: 'Copy'}
     - { url: '/fiction', text: 'Fiction'}
     - { url: '/hamwater', text: 'Hamwater'}
     - { url: '/resume', text: 'Resume'}
@@ -19,6 +19,6 @@ about_site:
 
 landing_nav:
     - { url: '/code', text: 'Code'}
-    # - { url: '/copy', text: 'Copy'}
+    - { url: '/copy', text: 'Copy'}
     - { url: '/fiction', text: 'Fiction'}
     - { url: '/hamwater', text: 'Hamwater'}

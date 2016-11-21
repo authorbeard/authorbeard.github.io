@@ -1,51 +1,53 @@
-.title-group {
-  position: fixed;
-  width: 100%;
-  padding: 0;
-  margin: 0;
+body.code {
+  .title-group {
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 
-  .topper {
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-  }
+    .topper {
+      position: relative;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: 100vw;
+    }
 
-  .topper::before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: "";
-    background: black;
-    opacity: .5;
-  }
+    .topper::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: "";
+      background: black;
+      opacity: .5;
+    }
 
-  .title-text {
-    position: relative;
-    top: 33vh;
-    background: black;
+    .title-text {
+      position: relative;
+      top: 33vh;
+      background: black;
 
-  }
+    }
 
-  .nav-arrow {
-    position: absolute;
-    left: 0;
-    right: 0;
-    color: $hamwater-title;
-    font-size: 75px;
-    bottom: 0;
+    .nav-arrow {
+      position: absolute;
+      left: 0;
+      right: 0;
+      color: $hamwater-title;
+      font-size: 75px;
+      bottom: 0;
 
 
-    i:hover {
-      color: $hamwater-default-hover;
+      i:hover {
+        color: $hamwater-default-hover;
+      }
     }
   }
 }
 
-nav {
+body.code nav.navbar {
   display: none;
 }
 
@@ -54,7 +56,7 @@ nav {
 }
 
 .wrapper {
-  height: 70vh;
+  height: 100vh;
   display: inline-block;
 }
 
@@ -62,7 +64,6 @@ nav {
 
   .row {
     height: 75%;
-    border: 1px solid white;
   }
 
   .column {
@@ -78,6 +79,10 @@ nav {
 
     .version-details {
       text-align: center;
+
+      .stack-title {
+        padding: 0px 5px;
+      }
 
       .tech-list {
 
@@ -128,7 +133,7 @@ nav {
     }
   }
 
-  .next-project {
+  .project-scroll {
     text-align: center;
     font-size: 75px;
 

@@ -5,15 +5,16 @@
     {% else %}
         {% include default-navbar.html %}
         {% include exp-title-group.html %}
-        <main>
+<!--         <main>
+            <h1 style="color: white; font-size: 72"></h1>
             {% for post in site.posts %}
-                {% if post.category == page.id %}
+                {% if post.category == page.id %} -->
                     {% include exp_tile.html %}
-                {% endif %}
+<!--                 {% endif %}
             {% endfor %}
 
             {% include pagination.html %}
-        </main>
+        </main> -->
     {% endif %}
 
 {% include footer.html %}

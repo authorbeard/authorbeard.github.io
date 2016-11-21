@@ -32,13 +32,17 @@ $(window).load(function() {
 
     $('.nav-arrow').click(function(){
       $('.title-group').slideToggle("slow", function(){
-        $('nav.navbar').addClass('navbar-fixed-top').show()
+        $('nav.navbar').show()
       })
     })
 
-    $('.next-project').click(function(){
+    $('div.next').click(function(){
+      debugger;
       $(this).parent().slideToggle('slow')
+    })
 
+    $('div.prev').click(function(){
+      $(this).parent().siblings().last().slideToggle('slow')
     })
   }
 });

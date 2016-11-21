@@ -26,3 +26,11 @@ projects:
         - name: 'rails-angular'
           source: 'authorbeard.github.io'
           tech: 'Rails 5, Angular 2.0, Bootstrap 4, CSS3, HTML 5'
+  - name: "FunMoney"
+    details:
+      description: "You got stuff to buy, bills to pay, fun to have and never enough money for all of it. FunMoney tells you what you can spend right now, and what you should save for later."
+      featured_image: 'frustration.jpg'
+      versions:
+        - name: 'Angular-Node'
+          source: 'authorbeard.github.io'
+          tech: 'NodeJS, Angular 2, Express, MongoDB, OpenX'
