@@ -30,8 +30,15 @@ $(window).load(function() {
       $(this).parent().siblings().first().slideToggle()
     })
 
+    $('.nav-arrow').click(function(){
+      $('.title-group').slideToggle("slow", function(){
+        $('nav.navbar').addClass('navbar-fixed-top').show()
+      })
+    })
+
     $('.next-project').click(function(){
       $(this).parent().slideToggle('slow')
+
     })
   }
 });

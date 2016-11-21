@@ -3,7 +3,8 @@
     {% if site.data.alerts.down %}
         {% include alerts.html %}
     {% else %}
-        {% include title-group.html %}
+        {% include default-navbar.html %}
+        {% include exp-title-group.html %}
         <main>
             {% for post in site.posts %}
                 {% if post.category == page.id %}

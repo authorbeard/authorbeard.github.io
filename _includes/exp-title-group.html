@@ -1,0 +1,56 @@
+<div class="container title-group"> 
+    {% if include.ptitle_img != 'nil' %}
+        {% if page.featured_image or page.featured_video_id %}
+            <div class="topper">
+                {% if page.featured_image %}
+                <span class="img" style="background-image: linear-gradient(white, #46291d), url('../{{ page.featured_image }}'); background-blend-mode: multiply"></span>
+                {% endif %}
+
+                {% if page.featured_video_id %}
+                <iframe src="https://www.youtube.com/embed/{{ page.featured_video_id }}" frameborder="0" allowfullscreen></iframe>
+                {% endif %}
+
+        {% endif %}
+    {% endif %}
+    
+    {% if page.id %}
+    <div class="title-text">
+        <h1 class="special">
+            <span><a href="{{include.permalink}}">
+            {% if include.ptitle %} 
+                {{include.ptitle}}
+            {% elsif page.title %}
+                {{ page.title }}
+            {% else %}
+                {{ site.data.global.title }}
+            {% endif %}
+            </a></span>
+        </h1>
+        <p class="lead">
+            {% if include.ptext %}
+                {{ include.ptext }}
+            {% elsif page.lead_text %}
+                {{ page.lead_text }}
+            {% elsif post.lead_text %}
+                {{ post.lead_text }}
+            {% endif %}
+        </p>
+        {% if page.layout != 'post' %}
+            <aside>
+                {{ page.date | date: "%m.%d.%y" }}
+
+                {% if page.categories != empty %}
+                    &middot;
+                    {% for category in page.categories %}
+                        <span>{{ category }}</span>
+                    {% endfor %} 
+
+                {% endif %}
+            </aside>
+            {% endif %}
+        {% endif %}
+    </div><!--title-text-->
+    <div class="nav-arrow">
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </div>
+</div>

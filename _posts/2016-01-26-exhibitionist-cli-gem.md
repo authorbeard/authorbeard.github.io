@@ -10,7 +10,7 @@ So I'm on the last project of the object-oriented Ruby unit of Learn-Verified, F
 
 Cue a coupla days figuring out Jekyll and a handful of drafts, most of which are prolly not gonna see the light of day. Even [in the dark moments]({{ site.baseurl }}/computer-meal), I usually realize that this is all I wanna be doing right now. So writing gets left out. 
 
-###** Screw That, Let's Get Started** 
+##**Screw That, Let's Get Started** 
 
 So it’s good news this time: I’ve successfully written my first Ruby gem. Well … anyway, the guts of it work. And the CLI works. It’s not ready to be shipped yet, I don’t think, and I doubt it’ll wind up on RubyGems. But everything works the way it’s supposed to. Well, the main things that meet the assignment’s specifications work. There’s another feature that I just tweaked this morning that makes some bits run better but now invalidates something else I just got finalized over the weekend. 
 
@@ -18,7 +18,7 @@ I’m very new to writing any kind of code, but already it seems like this is ju
 
 Anyway, at this point I'm not even sure what the curriculum developers were expecting when they asked for a blog post about the gem. Probably a walk-through. But I've had a hell of a good time walking through the history of the thing and the functionality's all a bunch of basic stuff and you can check it out on [my github repo](https://github.com/authorbeard/exhibitionist-cli-gem). Or check out the video I'm doing in a minute. It's linked at the bottom of this page. 
 
-####**Prelaunch: Days of Fear**
+###**Prelaunch: Days of Fear**
 
 So the folks at FIS, they’re nice folks, and included a video from Avi, the founder and spirit animal, showing how he'd get himself started on projects like this. Lotta reassuring things there, like this: “I think for any developer, the most intimidating part of coding is just this blank project directory.” 
 
@@ -38,7 +38,7 @@ And, anyway, I had a good idea for what I wanted to do with my gem. Which, by th
 2. Display it via CLI   
 3. Allow a user to dig into the details beyond what’s tossed up on the menu.  
 
-####**False Start!**
+###**False Start!**
 
 “No problem,” I says to myself I says. “I know what I wanna do.”
 

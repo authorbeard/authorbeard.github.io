@@ -1,3 +1,54 @@
+.title-group {
+  position: fixed;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  .topper {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .topper::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background: black;
+    opacity: .5;
+  }
+
+  .title-text {
+    position: relative;
+    top: 33vh;
+    background: black;
+
+  }
+
+  .nav-arrow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: $hamwater-title;
+    font-size: 75px;
+    bottom: 0;
+
+
+    i:hover {
+      color: $hamwater-default-hover;
+    }
+  }
+}
+
+nav {
+  display: none;
+}
+
 .code main {
   background-color: black;
 }
