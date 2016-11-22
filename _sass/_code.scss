@@ -1,4 +1,22 @@
 body.code {
+  background: white;
+
+  nav.navbar {
+    background: white;
+
+    li:hover {
+      background: $hamwater-title;
+      transition: slow;
+    }
+
+    .navbar-brand:hover {
+      color: $hamwater-title;
+    }
+
+    .icon-bar {
+      background: $hamwater-navtext;
+    }
+  }
 
   .title-group {
     position: fixed;
@@ -63,6 +81,7 @@ body.code nav.navbar {
 
 .code-portfolio {
   background: white; 
+  padding-bottom: 50px;
 
   .row {
     height: 75%;
@@ -153,6 +172,7 @@ body.code nav.navbar {
 }
 
 .blog-posts {
+  margin-top: 5px;
   display: inline-block;
   
   h3 {

@@ -460,15 +460,24 @@ aside {
     }
 }
 
+footer.hamwater {
+        position: relative;
+    
+}
+
 .site-footer {
     @include clearfix;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     text-align: -webkit-center;
+
+    background: black;
 
     div.row {
         text-align: -webkit-center;
     }
-
-
 }
 
 

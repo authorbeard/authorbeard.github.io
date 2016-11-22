@@ -45,14 +45,12 @@
                             {% endfor %}
                     {% endif %} 
                     <div class="blog-posts">   
-                        {% for post in site.posts | where_exp: "post", "post.title contains '{{item.name}}' %}
-                            {% if forloop.first == true %}
+                        {% assign posts = site.posts | where: "project", item.name %}
+                        {% for p in posts %}
+                            {% if forloop.first == true and forloop.length > 0 %}
                                 <h3>Related Posts:</h3>
                             {% endif %}
-                            
-                            <li><a href="{{ post.permalink }}">{{ post.title}}</a></li>
-
-
+                                <li><a href="{{ p.permalink }}">{{ p.title}}</a></li>
                         {% endfor %}    
                     </div><!--blog posts -->
                 </div><!--version details -->

@@ -18,19 +18,19 @@ projects:
           source: 'spinner-angular'
           tech: 'ruby, rails 4, AngularJS, angular-devise, UI-Router, OAuth1.0 (custom strategy), Oauth 2.0, API creation and integration, Javascript, Bootstrap 4, Mechanize, Paperclip, Figaro'
           demo: 'http://www.google.com'
-  - name: 'petBnB'
-    details:
-      description: "Pets are family. Don\'t stick them in the kennel while you go away. PetBnB finds vacation rentals that welcome your pet and people willing to bring your pet into their homes while you\'re away."
-      featured_image: 'vacation dog.jpeg'
-      versions:
-        - name: 'rails-angular'
-          source: 'authorbeard.github.io'
-          tech: 'Rails 5, Angular 2.0, Bootstrap 4, CSS3, HTML 5'
-  - name: "FunMoney"
-    details:
-      description: "You got stuff to buy, bills to pay, fun to have and never enough money for all of it. FunMoney tells you what you can spend right now, and what you should save for later."
-      featured_image: 'frustration.jpg'
-      versions:
-        - name: 'Angular-Node'
-          source: 'authorbeard.github.io'
-          tech: 'NodeJS, Angular 2, Express, MongoDB, OpenX'
+  # - name: 'petbnb'
+  #   details:
+  #     description: "Pets are family. Don\'t stick them in the kennel while you go away. PetBnB finds vacation rentals that welcome your pet and people willing to bring your pet into their homes while you\'re away."
+  #     featured_image: 'vacation dog.jpeg'
+  #     versions:
+  #       - name: 'rails-angular'
+  #         source: 'authorbeard.github.io'
+  #         tech: 'Rails 5, Angular 2.0, Bootstrap 4, CSS3, HTML 5'
+  # - name: "funmoney"
+  #   details:
+  #     description: "You got stuff to buy, bills to pay, fun to have and never enough money for all of it. FunMoney tells you what you can spend right now, and what you should save for later."
+  #     featured_image: 'frustration.jpg'
+  #     versions:
+  #       - name: 'Angular-Node'
+  #         source: 'authorbeard.github.io'
+  #         tech: 'NodeJS, Angular 2, Express, MongoDB, OpenX'

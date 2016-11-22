@@ -6,6 +6,7 @@ category: blog
 featured_image: '/assets/spinner default.png'
 permalink: /spinner-sinatra/
 tech: Ruby, Rails, Sinatra, Mechanize, Nokogiri
+project: spinner
 ---
 
 Let’s talk about [Spinner](https://github.com/authorbeard/spinner-sinatra-assessment), a Sinatra app I created for a Flatiron School Learn-Verified assessment. 
