@@ -1,6 +1,48 @@
 
-resume:
-  name: Michael Nolan
-  contact: (see download or GH profile)
-  github: authorbeard
-  linkedin: http://linkedin.com/in/michaelsnolan
+general:
+  - name: Michael Nolan
+    contact: 
+      - GitHub: https://github.com/authorbeard
+        LinkedIn: http://linkedin.com/in/michaelsnolan
+    technical_skills:
+      - languages: 'Ruby, JavaScript, Java, SQL, CSS3, HTML5, erb, bash, Liquid'
+        frameworks: 'Rack, Sinatra, Rails, Node.js, Angular 1, Bootstrap(3&4)'
+        other: 'JQuery, Ajax, git & GitHub, ActiveRecord, OAuth (1.0 & 2.0), Devise, Figaro, Paperclip, D3.js, NetBeans, REST APIs, JSON, MVC & MVVC architecture, Chart.js'
+    technical_experience:
+      projects:
+        - title: 'This Site'
+          description: 'Jekyll platform with Liquid templating language & SASS styling for Github-Pages, incorporated several custom templates, yml for dynamic page generation, additional jQuery for styling & animation. Began with then subsequently significantly modified Scotch Jekyll Bootstrap theme.'
+        - title: 'Spinner'
+          description: 'Music collection & interaction-tracking web app built in several versions (Sinatra, Rails, Rails+Angular). Created REST API, created custom OAuth(1.0) strategy, incorporated external APIs from Discogs & Spotify.'
+        - title: 'Java router'
+          description: 'Learned Java & NetBeans over course of 2 weeks to produce an app that could construct and analyze a route map described as a directed graph, featuring both modified Dijkstra algorithm implementation and CLI menu for selecting options and loading map from external text file.'
+        - title: 'Hacker News'
+          description: 'Lightweight Angular 1.5 front-end to fetch and display top stories & comments from HackerNews API, styled with Bootstrap.'
+        - title: 'Looop test'
+          description: 'Learned D3 to visualize data from API endpoint. Created mock back-end using JavaScript to generate data and Node&Express to serve it to D3 & CSS front-end with additional animations to display detailed data.'
+        - title: 'Weather Underground Visualizer'
+          description: 'used Ajax with timeouts to stream data from WeatherUnderground API and render it in Chart.js'
+        - title: 'Social Filter (under development)'
+          description: 'Lightweight Rails + Angular web app allowing users to clean out posts from various social media accounts without manually deleting each post. OAuth 2.0, Devise, Angular & Bootstrap.'
+        - title: 'Fun Money (under development)'
+          description: 'Web & mobile personal finance app focused on assisting users with decision-making in the moment about spending with regards to budgets, personal financial goals, previous spending.'
+    employment_history:
+      - title: 'Editor, Copywriter, Content Manager'
+        company: 'Freelance'
+        description: "Wrote social media content for 3 channels for Fortune 500 finance company. Wrote and copyedited correspondence, prospectuses and marketing material for Josh Wood Productions, Inc., producer of celebrity charity events. Wrote & copyedited daily and long-form reports for Business Insider Intelligence."
+        dates: "January 2015-September 2016"
+      - title: 'Managing Editor'
+        company: "Foundation for Economic Education"
+        description: "Led monthly print magazine to daily web-first format with monthly print component. Cut costs across the board by minimum of 30%, reduced length of editorial cycle by 75%. Hired and managed freelance writers, designers and proofreaders. Wrote, edited, proofread and ghostwrote columns, long-form articles, web-only content, book titles (new and reissued). Started on-demand printing program, including new layouts and commissioning of new covers, for out-of-print titles formerly too costly to bring back into production. Managed permissions, conducted image research, wrote captions, headlines and subheads. Final responsibility for all content."
+        dates: "October 2008-December 2015"
+      - title: "Head Developer"
+        company: "Lingua Institute"
+        description: "Built English-language content department for iBT TOEFL start-up. Wrote all tests, answers, teachers' guides, lectures, reading samples and conversations during initial phase. Recruited, hired and managed freelance writers as company growth led to expansion into new markets (younger learners than most TOEFL prep targets, incorporation of video-based lessons). Researched industry best-practices to develop rubrics, orientation materials and templates for internal use."
+        dates: "October 2004-September 2008"
+    education: 
+      - name: 'Flatiron School'
+        major: 'Learn-Verified web-development immersive | Ruby on Rails, JavaScript, Angular, OOP, MVC'
+        dates: 'November 2015-June 2016'
+      - name: 'Hillsdale College'
+        major: 'B.A., English/History'
+        dates: 'Sept 1996-May 2000'

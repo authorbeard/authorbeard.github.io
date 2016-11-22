@@ -18,6 +18,14 @@ projects:
           source: 'spinner-angular'
           tech: 'ruby, rails 4, AngularJS, angular-devise, UI-Router, OAuth1.0 (custom strategy), Oauth 2.0, API creation and integration, Javascript, Bootstrap 4, Mechanize, Paperclip, Figaro'
           demo: 'http://www.google.com'
+  - name: 'Looop test'
+    details:
+      description: "A code challenge completed for Looop technologies using D3.js (first experience with D3) to visualize API data with mouseover effects. Because of technical difficulties with the testing API, mocked back-end with JavaScript to generate dummy data, served by Node & Express."
+      featured_image: 'looop screenshot.png'
+      versions:
+        - name: "d3"
+          source: 'looop-test'
+          tech: 'NodeJS, D3.js, Express, JavaScript, JQuery, CSS'
   # - name: 'petbnb'
   #   details:
   #     description: "Pets are family. Don\'t stick them in the kennel while you go away. PetBnB finds vacation rentals that welcome your pet and people willing to bring your pet into their homes while you\'re away."

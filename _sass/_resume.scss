@@ -1,0 +1,25 @@
+body.resume {
+  background: white;
+
+  main {
+    background: white;
+    position: absolute;
+    top: 50px;
+  }
+}
+
+
+.jobs {
+  @extend %news;
+  
+  h4 {
+    font-weight: bold;
+  }
+  
+
+  .dates {
+    @extend %news;
+    font-weight: normal;
+  } 
+
+}
