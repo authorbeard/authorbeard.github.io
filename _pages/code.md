@@ -1,5 +1,5 @@
 ---
-layout: exp_default
+layout: code
 title: Code
 permalink: /code/
 id: code
