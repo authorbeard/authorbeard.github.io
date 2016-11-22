@@ -3,7 +3,7 @@
    {% for item in site.data.code_portfolio.projects %}
     <div class="{{item.name}} wrapper">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 column project-nav">
+            <div class="col-xs-12 col-sm-4 column project-nav">
                 <img class="img-responsive" src='
                     {% if item.details.featured_image %}
                         /assets/{{ item.details.featured_image}}
@@ -14,7 +14,7 @@
                     {% for v in item.details.versions %}
                         <div class="btn"><a href='{{v.source | prepend: site.data.global.source_base }}'> {{v.name | capitalize }} Version Source </a></div>
                         {% if v.demo %}
-                             | <span class='btn'><a href='{{v.demo}}'>Demo This Project</a></span>
+                             <span class='btn'><a href='{{v.demo}}'>Demo This Project</a></span>
                         {% endif %} 
                     {% endfor %}                   
                 </div>

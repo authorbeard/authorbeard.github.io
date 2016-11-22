@@ -1,4 +1,7 @@
 body.code {
+
+  background: white; 
+
   .title-group {
     position: fixed;
     width: 100%;
@@ -100,7 +103,7 @@ body.code nav.navbar {
     }
 
     h4 {
-      color: white;
+      color: $hamwater-navtext;
     }
 
     p {
