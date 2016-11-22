@@ -1,7 +1,5 @@
 body.code {
 
-  background: white; 
-
   .title-group {
     position: fixed;
     width: 100%;
@@ -59,11 +57,12 @@ body.code nav.navbar {
 }
 
 .wrapper {
-  height: 100vh;
-  display: inline-block;
+  height: 50vh;
+  display: block;
 }
 
 .code-portfolio {
+  background: white; 
 
   .row {
     height: 75%;
@@ -74,17 +73,21 @@ body.code nav.navbar {
   }
 
   .project-nav {
-    
+    padding-right: 25px;  
   }
 
   .project-details {
     color: $hamwater-title;
 
     .version-details {
-      text-align: center;
 
       .stack-title {
+        text-align: center;
         padding: 0px 5px;
+
+        h4 {
+          margin-top: 0;
+        }
       }
 
       .tech-list {
@@ -94,12 +97,8 @@ body.code nav.navbar {
     
 
     h2 { 
-      margin-top: 0px;
+      margin-top: 0;
       text-transform: uppercase;
-    }
-
-    h3 {
-      text-align: center;
     }
 
     h4 {
@@ -116,12 +115,12 @@ body.code nav.navbar {
     
     i {
       font-size: 16px;
-      color: $hamwater-navtext;
-      border-radius: 14%;
-      background: $hamwater-page-background;
-      height: .65em;
+      color: $hamwater-title;
+      border-radius: 21%;
+      background: white;
+      height: .75em;
       width: .73em;
-      line-height: .72em;
+      line-height: 1em;
 
       &:hover {
         color: $hamwater-title;
@@ -151,4 +150,23 @@ body.code nav.navbar {
 
 
 
+}
+
+.blog-posts {
+  display: inline-block;
+  
+  h3 {
+    margin-top: 0px;
+  }
+}
+
+.rule-line {
+  clear: both;
+  float: none;
+  width: 100%;
+  margin: 1.4em 0;
+  border: none;
+  height: .5px;
+  background: $hamwater-title;
+  background-image: linear-gradient(to right, white, $hamwater-title, white);
 }

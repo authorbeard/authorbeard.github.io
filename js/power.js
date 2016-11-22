@@ -34,21 +34,17 @@ $(window).load(function() {
       $('.title-group').slideToggle("slow", function(){
         $('body').animate({scrollTop: 0}, 0)
         $('nav.navbar').show()
+        $('.code-portfolio').css('margin-top', '49px')
       })
     })
 
-    $('div.next').click(function(){
-      // debugger;
-      $(this).parent().slideToggle('slow')
-    })
+    // $('div.next').click(function(){
+    //   $(this).parent().slideToggle('slow')
+    // })
 
-    $('div.prev').click(function(){
-      debugger;
-      $(this.parentElement.previousElementSibling).slideToggle()
-      
-
-      // debugger;
-    })
+    // $('div.prev').click(function(){
+    //   $(this.parentElement.previousElementSibling).slideToggle()
+    // })
   }
 });
 

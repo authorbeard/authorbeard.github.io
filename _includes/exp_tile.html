@@ -21,13 +21,14 @@
             </div><!--project nav-->
 
             <div class="col-xs-12 col-sm-6 column project-details">
-                <h2 class="code-portfolio">{{item.name}}</h2>
+                <h2 class="project-description">{{item.name}}</h2>
                 <h4>{{item.details.description}}</h4>
                 <div class="version-details">
+                    <h3>Tech:</h3>
                     {% if item.details.versions.size > 1 %}
                         {% for v in item.details.versions%}
                             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 {{v.name}} stack-title">
-                                <h3>{{v.name | capitalize}} <i class="fa fa-plus-square-o" aria-hidden='true'></i></h3>
+                                <h4>{{v.name | capitalize}} <i class="fa fa-plus-square-o" aria-hidden='true'></i></h4>
 
                                 <div class="tech-list {{v.name}}">
                                     {% assign tech=v.tech | split: ', ' %}
@@ -39,27 +40,28 @@
 
                         {% endfor%}
                     {% else %}
-                        <div class="col-xs-12 col-sm-8 col-md-8 column">
-                            <h3>Stack:</h3>
-                            <p>{{ item.details.versions.tech }}</p>
-                        </div>    
+                            {% for v in item.details.versions %}
+                                {{ v.tech }}
+                            {% endfor %}
+                    {% endif %} 
+                    <div class="blog-posts">   
+                        {% for post in site.posts | where_exp: "post", "post.title contains '{{item.name}}' %}
+                            {% if forloop.first == true %}
+                                <h3>Related Posts:</h3>
+                            {% endif %}
+                            
+                            <li><a href="{{ post.permalink }}">{{ post.title}}</a></li>
 
-                    {% endif %}
-                </div>
+
+                        {% endfor %}    
+                    </div><!--blog posts -->
+                </div><!--version details -->
             </div><!-- project details -->
         </div><!--row-->
-
-            {% if forloop.first != true %}
-            <div class = "project-scroll prev">
-                <i class="fa fa-chevron-up prev" aria-hidden="true"></i>
-            </div>
-            {% endif %}
-            {% if forloop.last != true %}
-            <div class="project-scroll next">
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </div>
-            {% endif %}
-
     </div><!--wrapper-->
+
     {% endfor %}
+
 </div>
+
+

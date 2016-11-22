@@ -5,6 +5,7 @@ date:   2016-01-05 10:20:53 -0500
 category: blog
 tags: fails, feels, code, Ruby
 featured_image: '/assets/frustration.jpg'
+permalink: '/computer-meal/'
 tech: ruby
 ---
 
