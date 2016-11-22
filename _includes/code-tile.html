@@ -44,16 +44,17 @@
                                 {{ v.tech }}
                             {% endfor %}
                     {% endif %} 
-                    <div class="blog-posts">   
-                        {% assign posts = site.posts | where: "project", item.name %}
-                        {% for p in posts %}
-                            {% if forloop.first == true and forloop.length > 0 %}
-                                <h3>Related Posts:</h3>
-                            {% endif %}
-                                <li><a href="{{ p.permalink }}">{{ p.title}}</a></li>
-                        {% endfor %}    
-                    </div><!--blog posts -->
                 </div><!--version details -->
+                <div class="col-sm-6 blog-posts">   
+                    {% assign posts = site.posts | where: "project", item.name %}
+                    {% for p in posts %}
+                        {% if forloop.first == true and forloop.length > 0 %}
+                            <h3>Related Posts:</h3>
+                        {% endif %}
+                            <li><a href="{{ p.permalink }}">{{ p.title}}</a></li>
+                    {% endfor %}    
+                </div><!--blog posts -->
+
             </div><!-- project details -->
         </div><!--row-->
     </div><!--wrapper-->
