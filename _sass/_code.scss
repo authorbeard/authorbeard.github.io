@@ -1,4 +1,9 @@
 body.code {
+
+
+  h2, h3, h4 {
+    @extend %news;
+  }
   background: white;
 
   nav.navbar {
