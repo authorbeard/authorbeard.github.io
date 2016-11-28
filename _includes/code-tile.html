@@ -45,7 +45,7 @@
                             {% endfor %}
                     {% endif %} 
                 </div><!--version details -->
-                <div class="col-sm-6 blog-posts">   
+                <div class="col-xs-12 blog-posts">   
                     {% assign posts = site.posts | where: "project", item.name %}
                     {% for p in posts %}
                         {% if forloop.first == true and forloop.length > 0 %}
