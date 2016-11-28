@@ -1,68 +1,98 @@
-<main>
-  {% include linkedin-badge.html %}
+<div class="main">
    {% for item in site.data.resume.general %}
-  <div>  
-    <h1>{{ item.name }}</h1>
-    {% for c_hash in item.contact %}
-      <h4>
-        {% for c in c_hash %}
-          <a href="{{ c[1] }}">{{ c[0] }}</a>
-            {% if forloop.last != true %}
-              |
-            {% endif %}
-        {% endfor %}
-      </h4>
-    {% endfor %}
+  <div class="contact">  
+      <div class="row">
+          <h1>{{ item.name }}</h1>
+          {% for c_hash in item.contact %}
+            <h4>
+              {% for c in c_hash %}
+                <a href="{{ c[1] }}">{{ c[0] }}</a>
+                  {% if forloop.last != true %}
+                    |
+                  {% endif %}
+              {% endfor %}
+            </h4>
+          {% endfor %}
+      </div>
   </div>
 
-  <div>
-    <h2>Technical Skills</h2>
-    {% for s_hash in item.technical_skills %}
-      {% for skills in s_hash %}
-        <h4>{{ skills[0] | capitalize }}</h4> 
-        {% assign s = skills[1] | split: ', ' %}
-        {% for skill in s %}
-          <li>{{ skill }}</li>
+  <div class="tech skills">
+    <div class="row">
+      <h2 class="section">Technical Skills</h2>
+      <hr></hr>
+        {% for s_hash in item.technical_skills %}
+          {% for skills in s_hash %}
+            <div class="col-xs-2">
+              <span class="category">{{ skills[0] | capitalize }}:</span>
+            </div>
+            <div class="col-xs-8 col-sm-10">
+              <span class="list">{{ skills[1]}}</span>
+            </div>
+          {% endfor %}
         {% endfor %}
-      {% endfor %}  
-    {% endfor %}
+    </div>
   </div>
 
-  <div>
-    <h2>Techical Experience</h2>
-    <p><a href="/code">(see more examples on my code portfolio page)</a></p>
+  <div class="tech experience">
+    <h2 class="section">Techical Experience <a href="/code" class="comment">(for details, see my code portfolio page)</a></h2>
+    <hr></hr>
+    
     {% for project in item.technical_experience.projects %}
-      <h4>{{project.title}}</h4>
-      {% assign p = project.description | split: ', ' %}
-      {% for project in p %}
-        <li>{{project}}</li>
-      {% endfor %}
+      <div class="row">
+        <div class="col-xs-12 col-sm-2">
+            <span class="project"><a href="{{ project.link }}">{{project.title}}</a></span class="category">
+        </div>
+        <div class="col-xs-12 col-sm-10">
+            {% assign p = project.description | split: '. ' %}
+            {% for sentence in p %}
+              <p>+ {{ sentence }}</p>
+            {% endfor %}
+        </div>
+      </div>
     {% endfor %}
+  
   </div>
 
   <div class="jobs">
-    <h2>Employment History</h2>
-    <p><a href="/about">(get more of the story on the About page)</a></p>
-    {% for job in item.employment_history %}
-      <h4>{{job.title}}, {{job.company}} | <span class="dates">{{ job.dates }}</span></h4>
-      {% assign tasks = job.description | split: '. ' %}
-      {% for t in tasks %}
-        <li>{{ t }}</li>
-      {% endfor %}
-    {% endfor %}
-
+    <div class="row">
+        <h2 class="section">Employment History <a href="/about" class="comment">(get more of the story on the About page)</a></h2>
+        <hr></hr>
+        
+        {% for job in item.employment_history %}
+        <div class="row">
+          <div class="col-xs-6">
+            <h4 class="job-title">{{job.title}}, {{job.company}}</h4>
+          </div>
+          <div class="col-xs-6">
+            <h5 class="dates">{{ job.dates }}</h5>
+          </div>
+          <div class="col-xs-12">
+              {% assign tasks = job.description | split: '. ' %}
+              {% for t in tasks %}
+                <p>+ {{ t }}</p>
+              {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+    </div>
   </div>
 
-  <div class= "education">
-    <h2>Education</h2>
-    {% for school in item.education %}
-      <h4>{{ school.name }}</h4>
-      <h5>{{ school.major }}</h5>
-      <h5>{{ school.dates }}</h5>
+  <div class="education">
+    <h2 class="section">Education</h2>
+    <hr></hr>
+    {% for school in item.education %}    
+      <div class="row">
+        <div class="col-xs-6">
+          <h4 class="name">{{ school.name }}</h4>
+        </div>
+        <div class="col-xs-6">
+          <h5 class="dates">{{ school.dates }}</h5>
+        </div><br />
+        <div class="col-xs-12">  
+          <h5 class="major">{{ school.major }}</h5>
+        </div>
+      </div>
     {% endfor %}
   </div>
-   {% endfor %}
-
-   <h1>DOWNLOAD RESUME HERE</h1>
-
-</main>
+ {% endfor %}
+</div>

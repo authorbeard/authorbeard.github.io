@@ -1,7 +1,4 @@
 
-# spinner:
-#     - {version: 'angular', source: 'spinner-angular' }
-
 projects:
   - name: 'spinner'
     details: 

@@ -1,7 +1,7 @@
 body.code {
 
 
-  h2, h3, h4 {
+  h2, h3, h4, p, a {
     @extend %news;
   }
   background: white;
@@ -175,7 +175,9 @@ body.code nav.navbar {
 
 .blog-posts {
   margin-top: 5px;
+  padding: 0; 
   display: inline-block;
+
   
   h3 {
     margin-top: 0px;
