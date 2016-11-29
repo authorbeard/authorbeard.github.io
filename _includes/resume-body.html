@@ -1,3 +1,4 @@
+
 <div class="main">
    {% for item in site.data.resume.general %}
   <div class="contact">  
@@ -22,11 +23,13 @@
       <hr></hr>
         {% for s_hash in item.technical_skills %}
           {% for skills in s_hash %}
-            <div class="col-xs-2">
-              <span class="category">{{ skills[0] | capitalize }}:</span>
-            </div>
-            <div class="col-xs-8 col-sm-10">
-              <span class="list">{{ skills[1]}}</span>
+            <div class="row">
+              <div class="col-xs-2">
+                <span class="category">{{ skills[0] | capitalize }}:</span>
+              </div>
+              <div class="col-xs-10 col-sm-10">
+                <span class="list">{{ skills[1]}}</span>
+              </div>
             </div>
           {% endfor %}
         {% endfor %}
@@ -39,10 +42,10 @@
     
     {% for project in item.technical_experience.projects %}
       <div class="row">
-        <div class="col-xs-12 col-sm-2">
+        <div class="col-xs-12 col-sm-3">
             <span class="project"><a href="{{ project.link }}">{{project.title}}</a></span class="category">
         </div>
-        <div class="col-xs-12 col-sm-10">
+        <div class="col-xs-12 col-sm-9">
             {% assign p = project.description | split: '. ' %}
             {% for sentence in p %}
               <p>+ {{ sentence }}</p>

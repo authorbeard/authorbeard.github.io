@@ -17,7 +17,7 @@ general:
           description: 'Music collection & interaction-tracking web app built in several versions (Sinatra, Rails, Rails+Angular). Created custom OAuth(1.0) strategy, incorporated external APIs from Discogs & Spotify. Built REST API.'
           link: 'https://github.com/authorbeard/spinner-angular'
         - title: 'Java router'
-          description: 'First Java app, built over course of 2 weeks as part of code challenge. Learned NetBeans & Java to implement map-building and routing app (using directed graphs) including modified Dijkstra algorithm implementation. Built CLI menus to allow for importing route map, adding search parameters (limit by # stops, limit by length, etc.).'
+          description: 'Java-based map-building and routing app (using directed graphs) including modified Dijkstra algorithm implementation. Built CLI menus to allow for importing route map, adding search parameters (limit by number of stops, limit by length, etc.). Learned Java & Netbeans in 10 days to complete challenge.'
         - title: 'Hacker News'
           description: 'Lightweight Angular 1.5 front-end to fetch and display top stories & comments from HackerNews API, styled with Bootstrap.'
           link: 'https://github.com/authorbeard/angular-hacker-news-lab-v-000'

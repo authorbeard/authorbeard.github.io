@@ -2,9 +2,8 @@
 ---
 
 @import '../_sass/_hamwater-variables';
-@import '../_sass/bootstrap';
+@import '../_sass/_bootstrap';
 @import '../_sass/syntax-highlighting';
-
 
 %cardo { font-family: 'Cardo', serif; }
 %news { font-family: 'News Cycle', sans-serif;}
@@ -244,6 +243,7 @@ nav.navbar.hamwater {
     margin: 0;
 
     a {
+        @extend %quattro;
         text-transform: uppercase;
         font-size: 16px;
         color: $hamwater-navtext;
@@ -566,4 +566,6 @@ figcaption {
 @import '../_sass/_code';
 @import '../_sass/_hamwater_media';
 @import '../_sass/_linkedin';
-@import '../_sass/_resume'
+@import '../_sass/_resume';
+@import '../_sass/_mininav';
+

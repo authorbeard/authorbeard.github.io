@@ -9,6 +9,10 @@ body.code {
   nav.navbar {
     background: white;
 
+    a {
+      @extend %quattro;
+    }
+
     li:hover {
       background: $hamwater-title;
       transition: slow;
