@@ -1,14 +1,17 @@
-html {
-  background-color: white;
-}
+
 
 .mini-nav {
   position: absolute;
-  top: 5px;
-  right: 35px;
+  top: 3px;
+  right: 18px;
   z-index: 5;
-  color: red;
   font-size: 20px;
+  padding: 6px 5px;
+  height: 36px;
+
+  button {
+    height: 36px;
+  }
 
   li {
     a:hover {
