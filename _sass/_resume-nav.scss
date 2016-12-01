@@ -1,11 +1,24 @@
 
 
+.print {
+  float: right;
+  /* position: absolute;
+  top: 9px;
+  right: 73px;
+  z-index: 2; */
+  font-size: 22px;
+  padding: 2px;
+  border: .5px solid #adadad;
+  border-radius: 4px;
+
+  i {
+    font-color: $hamwater-navtext;
+  }
+
+}
+
 .mini-nav {
-  position: absolute;
-  top: 3px;
-  right: 18px;
-  z-index: 5;
-  font-size: 20px;
+  float: right;
   padding: 6px 5px;
   height: 36px;
 
@@ -21,7 +34,8 @@
   }
 
   ul.dropdown-menu {
-    left: -118px;
+    top: 111%;
+    left: -107px;
   }
 
   .icon-bar {
@@ -38,4 +52,4 @@
   &.hover {
     background: $hamwater-title;
   }
-}
+} 

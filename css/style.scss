@@ -2,7 +2,7 @@
 ---
 
 @import '../_sass/_hamwater-variables';
-@import '../_sass/_bootstrap';
+@import '../_sass/_bootstrap'; 
 @import '../_sass/syntax-highlighting';
 
 %cardo { font-family: 'Cardo', serif; }
@@ -149,8 +149,12 @@ main {
         
 }
 
-.landing {
+body.landing {
+    height: 100vh;
+}
 
+.landing {
+    
 
     .landing-nav {
 
@@ -567,5 +571,5 @@ figcaption {
 @import '../_sass/_hamwater_media';
 @import '../_sass/_linkedin';
 @import '../_sass/_resume';
-@import '../_sass/_mininav';
+@import '../_sass/_resume-nav';
 
