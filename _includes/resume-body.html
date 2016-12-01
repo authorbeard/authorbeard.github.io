@@ -30,10 +30,10 @@
           {% for s_hash in item.technical_skills %}
             {% for skills in s_hash %}
               <div class="row">
-                <div class="col-xs-2">
+                <div class="col-xs-4 col-sm-2">
                   <span class="category">{{ skills[0] | capitalize }}:</span>
                 </div>
-                <div class="col-xs-10 col-sm-10">
+                <div class="col-xs-8 col-sm-10">
                   <span class="list">{{ skills[1]}}</span>
                 </div>
               </div>
