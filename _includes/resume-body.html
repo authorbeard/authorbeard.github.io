@@ -1,14 +1,16 @@
   <body class="{% if page.category %}category-{{ page.category }}{% else if page.id %}{{ page.id }}{% endif %}{% if page.layout-class %} layout-{{ page.layout-class }}{% endif %}">
 
   <div class="main">
-    {% include resume-nav.html %}
 
+  {% include resume-nav.html %}
+  
     {% for item in site.data.resume.general %}
     <div class="contact">  
         <div class="row">
+          <div class="col-xs-12">
             <h1>{{ item.name }}</h1>
             {% for c_hash in item.contact %}
-              <h4> Contact: 
+              <h4> 
                 {% for c in c_hash %}
                   <a href="{{ c[1] }}">{{ c[0] }}</a>
                     {% if forloop.last != true %}
@@ -17,6 +19,7 @@
                 {% endfor %}
               </h4>
             {% endfor %}
+          </div>
         </div>
     </div>
 
