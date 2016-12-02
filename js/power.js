@@ -37,14 +37,23 @@ $(window).load(function() {
         $('.code-portfolio').css('margin-top', '45px')
       })
     })
+  }
 
-    // $('div.next').click(function(){
-    //   $(this).parent().slideToggle('slow')
-    // })
+  if (body.attr('class') == 'resume'){
+// debugger;
 
-    // $('div.prev').click(function(){
-    //   $(this.parentElement.previousElementSibling).slideToggle()
-    // })
+    $('.print').click(function(){
+      $(body)
+        .css('font-size', '1.25em')
+        .css('margin', 0);
+      $('.col-xs-2').css('width', '15%');
+      $('.col-xs-10').css('width', '85%');
+      // $('.category').css('padding-left', 0);
+      // $('.skill-list').css('padding-left', 0);
+      // $('.proj-name').css('padding-left', 0);
+      // $('.row.job').css('margin-left', '-15px');
+      window.print();
+    })
   }
 });
 

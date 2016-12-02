@@ -1,27 +1,33 @@
   <body class="{% if page.category %}category-{{ page.category }}{% else if page.id %}{{ page.id }}{% endif %}{% if page.layout-class %} layout-{{ page.layout-class }}{% endif %}">
 
-  <div class="main">
+  <div class="container-fluid main">
 
   {% include resume-nav.html %}
+
+  <!-- <div class="print"> -->
+    <a href="#" class="print hidden-print"><i class="fa fa-print" aria-hidden="true"></i></a>
+  <!-- </div> -->
   
     {% for item in site.data.resume.general %}
     <div class="contact">  
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-xs-12 col-centered">
             <h1>{{ item.name }}</h1>
             {% for c_hash in item.contact %}
               <h4> 
                 {% for c in c_hash %}
-                  <a href="{{ c[1] }}">{{ c[0] }}</a>
-                    {% if forloop.last != true %}
-                      |
-                    {% endif %}
+                  <a href="{{ c[1] | prepend: 'https://' }}" class="hidden-print">{{ c[0] }}</a>
+                  <span class="visible-print-inline">{{ c[1] }}</span>
+                  {% if forloop.last != true %}
+                    <span class="divider">|</span>
+                  {% endif %}
                 {% endfor %}
               </h4>
             {% endfor %}
           </div>
         </div>
     </div>
+
 
     <div class="tech skills">
       <div class="row">
@@ -30,11 +36,11 @@
           {% for s_hash in item.technical_skills %}
             {% for skills in s_hash %}
               <div class="row">
-                <div class="col-xs-4 col-sm-2">
-                  <span class="category">{{ skills[0] | capitalize }}:</span>
+                <div class="col-xs-2 col-sm-2 category">
+                  <p>{{ skills[0] | capitalize }}:</p>
                 </div>
-                <div class="col-xs-8 col-sm-10">
-                  <span class="list">{{ skills[1]}}</span>
+                <div class="col-xs-10 col-sm-10 col-md-10 skill-list">
+                  <p>{{ skills[1]}}</p>
                 </div>
               </div>
             {% endfor %}
@@ -42,20 +48,24 @@
       </div>
     </div>
 
+
     <div class="tech experience">
-      <h2 class="section">Techical Experience <a href="/code" class="comment">(for details, see my code portfolio page)</a></h2>
+      <h2 class="section">Technical Experience <a href="/code" class="comment hidden-print">(for details, see my code portfolio page)</a></h2>
       <hr></hr>
       
       {% for project in item.technical_experience.projects %}
         <div class="row">
-          <div class="col-xs-12 col-sm-3">
-              <span class="project"><a href="{{ project.link }}">{{project.title}}</a></span class="category">
+          <div class="col-xs-2 col-sm-2 col-md-2 proj-name">
+              <p><a href="{{ project.link }}" class="hidden-print">{{project.title}}</a></p>
+              <p class="visible-print-inline">{{ project.title }}</p>
           </div>
-          <div class="col-xs-12 col-sm-9">
+          <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 proj-details">
+              <ul>
               {% assign p = project.description | split: '. ' %}
               {% for sentence in p %}
-                <p>+ {{ sentence }}</p>
+                <li>+ {{ sentence }}</li>
               {% endfor %}
+              </ul>
           </div>
         </div>
       {% endfor %}
@@ -64,11 +74,11 @@
 
     <div class="jobs">
       <div class="row">
-          <h2 class="section">Employment History <a href="/about" class="comment">(get more of the story on the About page)</a></h2>
+          <h2 class="section">Employment History <a href="/about" class="comment hidden-print">(get more of the story on the About page)</a></h2>
           <hr></hr>
           
           {% for job in item.employment_history %}
-          <div class="row">
+          <div class="row job">
             <div class="col-xs-6">
               <h4 class="job-title">{{job.title}}, {{job.company}}</h4>
             </div>
@@ -109,6 +119,5 @@
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
       <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <script src="/js/power.js"></script>
-
     </body>
 </html>

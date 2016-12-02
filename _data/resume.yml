@@ -2,12 +2,12 @@
 general:
   - name: Michael Nolan
     contact: 
-      - GitHub: https://github.com/authorbeard
-        LinkedIn: http://linkedin.com/in/michaelsnolan
+      - GitHub: github.com/authorbeard
+        LinkedIn: linkedin.com/in/michaelsnolan
     technical_skills:
-      - languages: 'Ruby, JavaScript, Java, SQL, CSS3, HTML5, erb, bash, Liquid'
-        frameworks: 'Rack, Sinatra, Rails, Node.js, Angular 1, Bootstrap(3&4), Jekyll'
-        other: 'JQuery, Ajax, git & GitHub, ActiveRecord, OAuth (1.0 & 2.0), Devise, Figaro, Paperclip, D3.js, NetBeans, REST APIs, JSON, MVC & MVVC architecture, Chart.js'
+      - languages: 'Ruby, JavaScript, Java, SQL, CSS3, Liquid, HTML5, erb, bash'
+        frameworks: 'Rails, Rack, Sinatra, Node.js, Angular 1.5, Bootstrap(3&4), Jekyll'
+        other: 'JQuery, Ajax, git & GitHub, ActiveRecord, OAuth (1.0 & 2.0), Sass, Devise, Figaro, Paperclip, D3.js, NetBeans, REST APIs, JSON, MVC & MVVC architecture, Chart.js'
     technical_experience:
       projects:
         - title: 'Personal Site'
@@ -24,10 +24,10 @@ general:
         - title: 'Looop test'
           description: 'Learned D3.js to render activity data served in 5-minute increments from two separate dates. Created mock back-end using JavaScript to work around problems with test API. Parsed data, per directions, into 15-minute increments, displaying data from one day over data from week prior. Added mouseover animations to expose additional details.'
           link: 'https://github.com/authorbeard/looop-test'
-        - title: 'Weather Underground Visualizer'
+        - title: 'Weather Visualizer'
           description: 'Lightweight AJAX front-end streams data from Weather Underground API, renders data using Chart.js'
           link: 'https://github.com/authorbeard/js-weather-api-ajax-v-000'
-        - title: 'JavaScript TicTacToe'
+        - title: 'JS TicTacToe'
           description: 'JavaScript and JQuery front-end with a Rails API back end. Keeps track of players and allows them to save & return to games.'
           link: 'https://github.com/authorbeard/js-tictactoe-rails-api-v-000'
         - title: 'Social Filter (under development)'
@@ -49,7 +49,7 @@ general:
         dates: "October 2004-September 2008"
     education: 
       - name: 'Flatiron School'
-        major: 'Learn-Verified web-development immersive | Ruby on Rails, JavaScript, Angular, OOP, MVC'
+        major: 'Learn-Verified web-development immersive | Ruby on Rails, JavaScript, jQuery, AJAX, Angular, OOP, MVC, MVVC'
         dates: 'November 2015-June 2016'
       - name: 'Hillsdale College'
         major: 'B.A., English/History'
