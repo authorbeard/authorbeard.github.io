@@ -28,7 +28,7 @@ And I chose to start learning to code because I figured it'd touch a lotta the s
 
 I bring all this up because that blank page drives a lot of what I love(d) most about writing — despite all the frustration, opportunity cost and failure it’s brought me: It’s the purest and most expansive kind of freedom I’ve ever even sniffed. Nothing on Earth touches it (sorry Ladybeard, but you knew the score when you took the damn ring). 
 
-But it comes from this blank page. So that freedom also ... well, lemme point you at <a href="https://youtu.be/tPc6qaEQ600">one of my favorite Simpsons jokes</a>. 
+But it comes from this blank page. So that freedom also ... well, lemme point you at [one of my favorite Simpsons jokes](https://youtu.be/tPc6qaEQ600). 
 
 So, okay, just like Impostor Syndrome, this is something even experienced coders feel. Great! And it turns out it’s not only okay to start at Google — it comes highly recommended. 
 
@@ -58,9 +58,11 @@ But no mind! No mind! I had an idea, I was gonna learn the fuck out some shit. E
 
 Suuuuuper easy. Just write some shit like this: 
 
-{% highlight ruby %}
+```ruby
+
 doc = Nokogiri::HTML(open(“http://www.ohmyrockness.com”)).css(“.row vevent”)
-{% endhighlight %}
+
+```
 
 Then it’s just a matter of setting up a quick little bit of mass-assignment, a shitload of attr_accessors (I even had them written out), bing bang boom. 
 

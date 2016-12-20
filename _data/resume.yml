@@ -4,6 +4,7 @@ general:
     contact: 
       - GitHub: github.com/authorbeard
         LinkedIn: linkedin.com/in/michaelsnolan
+
     technical_skills:
       - languages: 'Ruby, JavaScript, Java, SQL, CSS3, Liquid, HTML5, erb, bash'
         frameworks: 'Rails, Rack, Sinatra, Node.js, Angular 1.5, Bootstrap(3&4), Jekyll'
@@ -11,7 +12,7 @@ general:
     technical_experience:
       projects:
         - title: 'Personal Site'
-          description: 'Jekyll platform with Liquid templating language & SASS styling for Github-Pages. Modified open-source theme with custom templates. Used YML data files to generate resume, code portfolio pages. Additional jQuery for styling & animation.'
+          description: 'Jekyll platform with Liquid templating language & SASS styling for Github-Pages. Modified open-source theme with custom templates. Used YML data files to generate resume, code portfolio pages.' # Additional jQuery for styling & animation.'
           link: 'https://github.com/authorbeard/authorbeard.github.io'
         - title: 'Spinner'
           description: 'Music collection & interaction-tracking web app built in several versions (Sinatra, Rails, Rails+Angular). Created custom OAuth(1.0) strategy, incorporated external APIs from Discogs & Spotify. Built REST API.'
@@ -22,7 +23,7 @@ general:
           description: 'Lightweight Angular 1.5 front-end to fetch and display top stories & comments from HackerNews API, styled with Bootstrap.'
           link: 'https://github.com/authorbeard/angular-hacker-news-lab-v-000'
         - title: 'Looop test'
-          description: 'Learned D3.js to render activity data served in 5-minute increments from two separate dates. Created mock back-end using JavaScript to work around problems with test API. Parsed data, per directions, into 15-minute increments, displaying data from one day over data from week prior. Added mouseover animations to expose additional details.'
+          description: 'Learned D3.js to render activity data from two separate dates, overlaid, with mouseover events to expose additional detail. Created mock back-end using JavaScript to work around problems with test API.' 
           link: 'https://github.com/authorbeard/looop-test'
         - title: 'Weather Visualizer'
           description: 'Lightweight AJAX front-end streams data from Weather Underground API, renders data using Chart.js'

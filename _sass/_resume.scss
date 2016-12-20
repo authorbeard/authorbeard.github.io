@@ -24,8 +24,12 @@ body.resume {
     padding: 0 10px;
     box-shadow: 0 0 20px 0 lightgrey;
   }
-   
+
   .section {
+  
+  }
+   
+  .section-head {
     color: $hamwater-title;
     font-size: 18px;
     text-align: left;
@@ -149,7 +153,7 @@ body.resume {
   }
 }
 
-ul {
+.resume ul {
   list-style: none outside none;
   margin-left: -15px;
   margin-bottom: 5px;

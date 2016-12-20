@@ -23,7 +23,7 @@ I ran into problems pretty quickly with the penultimate one there. I don’t wan
 
 Here’s how it looks right now: 
 
-{% highlight ruby %}
+```ruby
   def detail_menu
     puts "\n\nEnter a number to fetch a detailed description.\n\n"
     puts "Or:"
@@ -49,7 +49,7 @@ Here’s how it looks right now:
       end
   end
 
-{% endhighlight %}
+```
 
 I mentioned earlier that, for #top_menu, having it possible for the user to enter numbers and letters and still provide valid input was a little tricky. But this wound up not being that big of a deal this time. I mention it again because it’s the kind of relatively minor thing that used to make my brain go all rainbow spinner of death, sometimes for hours. Now it doesn't, and I'm not totally sure if that makes me the King of All Computers, but I think there's a pretty good chance that it does make me the King of All Computers. 
 
@@ -72,9 +72,9 @@ How do I let the user move in and out of menus but alway see the correct text fo
 
 With the Bklyn Museum, it was really easy to grab the text. But it had a bunch of newlines and whitespace in it. So I had to screw around for awhile to get this stuff: 
 
-{% highlight ruby %}
+```ruby
 whatever.text.gsub(/\s{2,10}/, "\n\n")
-{% endhighlight %}
+```
 
 So this wound up creating the same problem that the Guggenheim’s main page gave me: I need to chain a few methods together to get just the stuff I want. Ideally, I wanted just one method to handle each task, or maybe one module for each museum, at the very most. That would still leave me writing three or more versions of methods for each museum, but it’d be clear enough. 
 
@@ -91,7 +91,7 @@ But it led me to a couple ideas I liked:
 
 So what I did first was something like this: 
 
-{% highlight ruby %}
+```ruby
 URL = { :brooklyn => “http://www.brooklynmuseum.org”
         :guggenheim => “http://www.guggenheim.org”
       }
@@ -102,7 +102,7 @@ CSS = {
       }
   
 
-{% endhighlight %}
+```
 
 And so on. It worked well enough, but I wound up having to hand through three variables sometimes: a name, a nodeset, some CSS selectors. Sometimes that meant wrapping methods in other methods, with each of them getting two more arguments generated the first three. Messy. I mean, if I gotta do it that way, I gotta do it that way, but it just ... bugs me. 
 
@@ -132,7 +132,7 @@ As soon as I saw this, I gave up on one of my original ideas -- to let the user 
 
 The main problem was that having three different types of dates wreaked havoc with the mass assignment in Museum#new. And it was just a mess. So I wrote a helper method that would make sure that calling #parse_gugg would return a standardized array. 
 
-{% highlight ruby %}
+```ruby
 def self.trim_gugg(array)   
   array.each{|ex|   
     if ex[:date].empty? 
@@ -147,7 +147,7 @@ def self.trim_gugg(array)
     }
 end
 
-{% endhighlight %}
+```
 
 Not great, but at least it’s hidden away. It only gets called when the Guggenheim's parser gets called. You never have to think about it. 
 
@@ -191,16 +191,16 @@ I also decided to have the Museums build themselves, instead of making that a cl
 
 That left me with an #initialize method I at least like for its brevity: 
 
-{% highlight ruby %}
+```ruby
 def initialize(museum_hash)   
     self.build(museum_hash)
     self.save
   end
-{% endhighlight %}
+```
 
 And I could get that one argument to pass in by collapsing the two constants with their nested hashes into one constant: an array of hashes, with each has representing everything a museum needed to build itself out: 
 
-{% highlight ruby %} 
+```ruby 
   MUSEUMS = [
           { :name => "brooklyn",
             :url => "https://www.brooklynmuseum.org/exhibitions", #"resources/bk.html",
@@ -215,11 +215,11 @@ And I could get that one argument to pass in by collapsing the two constants wit
           }
 
          ]
-{% endhighlight %}
+```
 
 This way, I could build the first menu the user sees like this: 
 
-{% highlight ruby %}
+```ruby
  def top_menu
     
     system("clear")
@@ -230,7 +230,7 @@ This way, I could build the first menu the user sees like this:
     puts "(there's more functionality to come)"
     puts "Or type q to quit."
     input = gets.strip
-{% endhighlight %}
+```
 
 So the user automatically sees the correct number of options and their input will call all the right stuff. 
 
@@ -238,7 +238,7 @@ That left just the “see everything” bit to write out. Which actually only to
 
 This is what I came up with, in the case statement that follows what I have up above: 
 
-{% highlight ruby %}
+```ruby
 elsif input.to_i == MUSEUMS.size + 1
         system("clear")
         fetching_message
@@ -253,7 +253,7 @@ elsif input.to_i == MUSEUMS.size + 1
           system("clear")
           Museum.all.detect{|m| m.name == mus}.display_exhibits
         detail_menu
-{% endhighlight %}
+```
 
 I still have a problem with this: namely, when it sets the @current attribute the second time through (at present; still haven’t gotten around to loading in the Met), that stays set, so #detail_menu doesn’t work quite right. It seems to help if you first step through the menus (saving each Museum object with all its Exhibit objects). I don’t know why. Frankly, at this point, I don’t care. 
 
