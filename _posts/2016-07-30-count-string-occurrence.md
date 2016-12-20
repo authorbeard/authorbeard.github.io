@@ -2,6 +2,7 @@
 layout: post
 title: Count Occurrences of a Sequence in a String in Ruby (including non-adjacent characters)
 date: 2016-07-30
+permalink: /count-string-occurrence/
 category: blog
 tags: code-challenges
 tech: ruby

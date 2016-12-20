@@ -43,7 +43,7 @@ And besides, when I say I love this, I’m not talking about any persistent set 
 
 Hell, maybe I’m wrong that it’s love — maybe it’s just some kind of infatuation. Maybe it’s a nascent addiction or some other kind of compulsive behavior. But I can’t quit it and don’t want to. Haven’t woken up yet, since I started getting serious about learning to code last September, and wanted to avoid even thinking about it. So that’s something. Might as well call it love. It feels like it, anyway. 
 
-###**The Land of the Morning Tiger**
+### **The Land of the Morning Tiger**
 
 Which is where, normally, I’d bring up novel-writing. I think about it,  _a lot_, when I think about coding, for reasons I’ll belabor elsewhere. Maybe even in this post, I dunno — writing’s a form of thinking, so it’s a discovery process. I dunno where I’m going with this. I’m writing because I woke up with it on my mind and needed to figure it out. Which reminds me that I need a disclaimer somewhere so I don’t need to keep repeating that I’m writing this blog for my sake so you shouldn’t expect it to make, like, boatloads of sense.
 

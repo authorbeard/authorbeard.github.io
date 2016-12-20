@@ -4,7 +4,6 @@ general:
     contact: 
       - GitHub: github.com/authorbeard
         LinkedIn: linkedin.com/in/michaelsnolan
-
     technical_skills:
       - languages: 'Ruby, JavaScript, Java, SQL, CSS3, Liquid, HTML5, erb, bash'
         frameworks: 'Rails, Rack, Sinatra, Node.js, Angular 1.5, Bootstrap(3&4), Jekyll'

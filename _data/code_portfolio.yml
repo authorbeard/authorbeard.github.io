@@ -15,6 +15,14 @@ projects:
           source: 'spinner-angular'
           tech: 'ruby, rails 4, AngularJS, angular-devise, UI-Router, OAuth1.0 (custom strategy), Oauth 2.0, API creation and integration, Javascript, Bootstrap 4, Mechanize, Paperclip, Figaro'
           demo: 'http://www.google.com'
+  - name: 'Personal Site (this one)'
+    details:
+      description: "A Github-Pages (aka Jekyll) site site built with the Scotch Jekyll Bootstrap theme and extensive customization."
+      featured_image: 'authorbeard landing pg.png'
+      versions:
+        - name: 'Jekyll'
+          source: 'authorbeard.github.io'
+          tech: 'jekyll, Liquid, Sass, JavaScript, JQuery, yml'
   - name: 'Looop test'
     details:
       description: "A code challenge completed for Looop technologies using D3.js (first experience with D3) to visualize API data with mouseover effects. Because of technical difficulties with the testing API, mocked back-end with JavaScript to generate dummy data, served by Node & Express."
