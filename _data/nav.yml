@@ -1,6 +1,6 @@
 basic_nav:
     - { url: '/resume', text: 'Resume'}
-    - { url: '/about', text: 'About' }
+    - { url: '/bio', text: 'About' }
     - { url: 'https://github.com/authorbeard/authorbeard.github.io', text: 'Source' }
 
 general_nav:
@@ -9,7 +9,7 @@ general_nav:
     - { url: '/fiction', text: 'Fiction'}
     - { url: '/hamwater', text: 'Hamwater'}
     - { url: '/resume', text: 'Resume'}
-    - { url: '/', text: 'Home' }
+    # - { url: '/', text: 'Home' }
 
 
 about_site:

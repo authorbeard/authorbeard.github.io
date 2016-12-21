@@ -14,7 +14,7 @@ projects:
         - name: 'angular'
           source: 'spinner-angular'
           tech: 'ruby, rails 4, AngularJS, angular-devise, UI-Router, OAuth1.0 (custom strategy), Oauth 2.0, API creation and integration, Javascript, Bootstrap 4, Mechanize, Paperclip, Figaro'
-          demo: 'http://www.google.com'
+          # demo: 'http://www.google.com'
   - name: 'Personal Site (this one)'
     details:
       description: "A Github-Pages (aka Jekyll) site site built with the Scotch Jekyll Bootstrap theme and extensive customization."

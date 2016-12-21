@@ -10,9 +10,9 @@
                     {% else %}
                         /assets/default.jpg
                     {% endif %}'>
-                <div class='btn-group-sm'>
+                <div class='version-links'>
                     {% for v in item.details.versions %}
-                        <div class="btn"><a href='{{v.source | prepend: site.data.global.source_base }}'> {{v.name | capitalize }} Version Source </a></div>
+                        <a href='{{v.source | prepend: site.data.global.source_base }}'> {{v.name | capitalize }} Version Source </a><br />
                         {% if v.demo %}
                              <span class='btn'><a href='{{v.demo}}'>Demo This Project</a></span>
                         {% endif %} 
