@@ -7,7 +7,7 @@ general:
     technical_skills:
       - languages: 'Ruby, JavaScript, Java, SQL, CSS3, Liquid, HTML5, erb, bash'
         frameworks: 'Rails, Rack, Sinatra, Node.js, Angular 1.5, Bootstrap(3&4), Jekyll'
-        other: 'JQuery, Ajax, git & GitHub, ActiveRecord, OAuth (1.0 & 2.0), Sass, Devise, Figaro, Paperclip, D3.js, NetBeans, REST APIs, JSON, MVC & MVVC architecture, Chart.js'
+        other: 'Data Visualization, JQuery, Ajax, GitHub, ActiveRecord, OAuth (1.0 & 2.0), Sass, Devise, Figaro, Paperclip, D3.js, NetBeans, Chart.js, REST APIs, JSON, MVC & MVVC architecture, TDD'
     technical_experience:
       projects:
         - title: 'Personal Site'
