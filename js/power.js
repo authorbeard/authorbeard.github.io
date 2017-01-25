@@ -40,7 +40,6 @@ $(window).load(function() {
   }
 
   if (body.attr('class') == 'resume'){
-// debugger;
 
     $('.print').click(function(){
       $(body)

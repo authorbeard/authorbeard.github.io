@@ -2,116 +2,117 @@
 
   <div class="container-fluid main">
 
-  {% include resume-nav.html %}
+      {% include resume-nav.html %}
 
-  <!-- <div class="print"> -->
-    <a href="#" class="print hidden-print"><i class="fa fa-print" aria-hidden="true"></i></a>
-  <!-- </div> -->
-  
-    {% for item in site.data.resume.general %}
-    <div class="contact section">  
-        <div class="row">
-          <div class="col-xs-12 col-centered">
-            <h1>{{ item.name }}</h1>
-            {% for c_hash in item.contact %}
-              <h4> 
-                {% for c in c_hash %}
-                  <a href="{{ c[1] | prepend: 'https://' }}" class="hidden-print">{{ c[0] }}</a>
-                  <span class="visible-print-inline">{{ c[1] }}</span>
-                  {% if forloop.last != true %}
-                    <span class="divider">|</span>
-                  {% endif %}
+      <!-- <div class="print"> -->
+      <a href="#"  class="print hidden-print"><i class="fa fa-print" aria-hidden="true"></i></a>
+      <!-- </div> -->
+      <div class="printable" id="printable">
+        {% for item in site.data.resume.general %}
+        <div class="contact section">  
+            <div class="row">
+              <div class="col-xs-12 col-centered">
+                <h1>{{ item.name }}</h1>
+                {% for c_hash in item.contact %}
+                  <h4> 
+                    {% for c in c_hash %}
+                      <a href="{{ c[1] | prepend: 'https://' }}" class="hidden-print">{{ c[0] }}</a>
+                      <span class="visible-print-inline">{{ c[1] }}</span>
+                      {% if forloop.last != true %}
+                        <span class="divider">|</span>
+                      {% endif %}
+                    {% endfor %}
+                  </h4>
                 {% endfor %}
-              </h4>
-            {% endfor %}
-          </div>
-        </div>
-    </div>
-
-
-    <div class="tech skills section">
-      <div class="row">
-        <h2 class="section-head">Technical Skills</h2>
-        <hr></hr>
-          {% for s_hash in item.technical_skills %}
-            {% for skills in s_hash %}
-              <div class="row">
-                <div class="col-xs-2 col-sm-2 category">
-                  <p>{{ skills[0] | capitalize }}:</p>
-                </div>
-                <div class="col-xs-10 col-sm-10 col-md-10 skill-list">
-                  <p>{{ skills[1]}}</p>
-                </div>
               </div>
-            {% endfor %}
-          {% endfor %}
-      </div>
-    </div>
+            </div>
+        </div>
 
-    <div class="tech experience section">
-      <h2 class="section-head">Technical Experience <a href="/code" class="comment hidden-print">(for details, see my code portfolio page)</a></h2>
-      <hr></hr>
-      
-      {% for project in item.technical_experience.projects %}
-        <div class="row">
-          <div class="col-xs-2 col-sm-2 col-md-2 proj-name">
-              <p><a href="{{ project.link }}" class="hidden-print">{{project.title}}</a></p>
-              <p class="visible-print-inline">{{ project.title }}</p>
-          </div>
-          <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 proj-details">
-              <ul>
-              {% assign p = project.description | split: '. ' %}
-              {% for sentence in p %}
-                <li>+ {{ sentence }}</li>
+
+        <div class="tech skills section">
+          <div class="row">
+            <h2 class="section-head">Technical Skills</h2>
+            <hr></hr>
+              {% for s_hash in item.technical_skills %}
+                {% for skills in s_hash %}
+                  <div class="row">
+                    <div class="col-xs-2 col-sm-2 category">
+                      <p>{{ skills[0] | capitalize }}:</p>
+                    </div>
+                    <div class="col-xs-10 col-sm-10 col-md-10 skill-list">
+                      <p>{{ skills[1]}}</p>
+                    </div>
+                  </div>
+                {% endfor %}
               {% endfor %}
-              </ul>
           </div>
         </div>
-      {% endfor %}
-    </div>    
 
-    <div class="jobs section">
-      <div class="row">
-          <h2 class="section-head">Employment History <a href="/bio" class="comment hidden-print">(get more of the story on the About page)</a></h2>
+        <div class="tech experience section">
+          <h2 class="section-head">Technical Experience <a href="/code" class="comment hidden-print">(for details, see my code portfolio page)</a></h2>
           <hr></hr>
           
-          {% for job in item.employment_history %}
-          <div class="row job">
-            <div class="col-xs-6">
-              <h4 class="job-title">{{job.title}}, {{job.company}}</h4>
+          {% for project in item.technical_experience.projects %}
+            <div class="row">
+              <div class="col-xs-2 col-sm-2 col-md-2 proj-name">
+                  <p><a href="{{ project.link }}" class="hidden-print">{{project.title}}</a></p>
+                  <p class="visible-print-inline">{{ project.title }}</p>
+              </div>
+              <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 proj-details">
+                  <ul>
+                  {% assign p = project.description | split: '. ' %}
+                  {% for sentence in p %}
+                    <li>+ {{ sentence }}</li>
+                  {% endfor %}
+                  </ul>
+              </div>
             </div>
-            <div class="col-xs-6">
-              <h5 class="dates">{{ job.dates }}</h5>
-            </div>
-            <div class="col-xs-12">
-                {% assign tasks = job.description | split: '. ' %}
-                {% for t in tasks %}
-                  <p>+ {{ t }}</p>
-                {% endfor %}
-            </div>
-          </div>
           {% endfor %}
-      </div>
-    </div>
+        </div>    
 
-    <div class="education section">
-      <h2 class="section-head">Education</h2>
-      <hr></hr>
-      {% for school in item.education %}    
-        <div class="row">
-          <div class="col-xs-6">
-            <h4 class="name">{{ school.name }}</h4>
-          </div>
-          <div class="col-xs-6">
-            <h5 class="dates">{{ school.dates }}</h5>
-          </div><br />
-          <div class="col-xs-12">  
-            <h5 class="major">{{ school.major }}</h5>
+        <div class="jobs section">
+          <div class="row">
+              <h2 class="section-head">Employment History <a href="/bio" class="comment hidden-print">(get more of the story on the About page)</a></h2>
+              <hr></hr>
+              
+              {% for job in item.employment_history %}
+              <div class="row job">
+                <div class="col-xs-6">
+                  <h4 class="job-title">{{job.title}}, {{job.company}}</h4>
+                </div>
+                <div class="col-xs-6">
+                  <h5 class="dates">{{ job.dates }}</h5>
+                </div>
+                <div class="col-xs-12">
+                    {% assign tasks = job.description | split: '. ' %}
+                    {% for t in tasks %}
+                      <p>+ {{ t }}</p>
+                    {% endfor %}
+                </div>
+              </div>
+              {% endfor %}
           </div>
         </div>
-      {% endfor %}
-    </div>
-   {% endfor %}
+
+        <div class="education section">
+          <h2 class="section-head">Education</h2>
+          <hr></hr>
+          {% for school in item.education %}    
+            <div class="row">
+              <div class="col-xs-6">
+                <h4 class="name">{{ school.name }}</h4>
+              </div>
+              <div class="col-xs-6">
+                <h5 class="dates">{{ school.dates }}</h5>
+              </div><br />
+              <div class="col-xs-12">  
+                <h5 class="major">{{ school.major }}</h5>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+       {% endfor %}
+     </div> <!-- printable div -->
   </div>
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
