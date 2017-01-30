@@ -4,33 +4,14 @@
 
       {% include resume-nav.html %}
 
-      <!-- <div class="print"> -->
-      <a href="#"  class="print hidden-print"><i class="fa fa-print" aria-hidden="true"></i></a>
-      <!-- </div> -->
-      <div class="printable" id="printable">
-        {% for item in site.data.resume.general %}
-        <div class="contact section">  
-            <div class="row">
-              <div class="col-xs-12 col-centered">
-                <h1>{{ item.name }}</h1>
-                {% for c_hash in item.contact %}
-                  <h4> 
-                    {% for c in c_hash %}
-                      <a href="{{ c[1] | prepend: 'https://' }}" class="hidden-print">{{ c[0] }}</a>
-                      <span class="visible-print-inline">{{ c[1] }}</span>
-                      {% if forloop.last != true %}
-                        <span class="divider">|</span>
-                      {% endif %}
-                    {% endfor %}
-                  </h4>
-
   <!-- <div class="print"> -->
-  <a href="/assets/'Michael Nolan Resume [2017].pdf'">PDF version</a>
+  <a href="{{ site.baseurl}}/assets/Michael Nolan Resume 2017.pdf" class="print hidden-print"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+
     <!-- <a href="#" class="print hidden-print"><i class="fa fa-print" aria-hidden="true"></i></a> -->
   <!-- </div> -->
   
     {% for item in site.data.resume.general %}
-    <div class="contact">  
+      <div class="contact">  
         <div class="row">
           <div class="col-xs-12 col-centered">
             <h1>{{ item.name }}</h1>
@@ -43,9 +24,11 @@
                     <span class="divider">|</span>
                   {% endif %}
                 {% endfor %}
-              </div>
+              </h4>
+            {% endfor %}
             </div>
-        </div>
+          </div>
+      </div>
 
 
         <div class="tech skills section">
@@ -73,7 +56,7 @@
           
           {% for project in item.technical_experience.projects %}
             <div class="row">
-              <div class="col-xs-2 col-sm-2 col-md-2 proj-name">
+              <div class="col-xs-3 col-sm-2 col-md-2 proj-name">
                   <p><a href="{{ project.link }}" class="hidden-print">{{project.title}}</a></p>
                   <p class="visible-print-inline">{{ project.title }}</p>
               </div>
