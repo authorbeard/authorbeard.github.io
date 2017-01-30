@@ -59,9 +59,13 @@ But no mind! No mind! I had an idea, I was gonna learn the fuck out some shit. E
 Suuuuuper easy. Just write some shit like this: 
 
 ```ruby
+<<<<<<< HEAD
 
 doc = Nokogiri::HTML(open(“http://www.ohmyrockness.com”)).css(“.row vevent”)
 
+=======
+doc = Nokogiri::HTML(open(“http://www.ohmyrockness.com”)).css(“.row vevent”)
+>>>>>>> experimental
 ```
 
 Then it’s just a matter of setting up a quick little bit of mass-assignment, a shitload of attr_accessors (I even had them written out), bing bang boom. 
