@@ -5,7 +5,8 @@
   {% include resume-nav.html %}
 
   <!-- <div class="print"> -->
-    <a href="#" class="print hidden-print"><i class="fa fa-print" aria-hidden="true"></i></a>
+  <a href="{{ site.baseurl}}/assets/'Michael Nolan Resume [2017].pdf'">PDF version</a>
+    <!-- <a href="#" class="print hidden-print"><i class="fa fa-print" aria-hidden="true"></i></a> -->
   <!-- </div> -->
   
     {% for item in site.data.resume.general %}
@@ -50,12 +51,12 @@
 
 
     <div class="tech experience">
-      <h2 class="section">Technical Experience <a href="/code" class="comment hidden-print">(for details, see my code portfolio page)</a></h2>
+      <h2 class="section">Technical Experience <a href="/code" class="comment hidden-print">(for details, see my code portfolio page)</a><a href="#" class="visible-print-inline">(For project details visit authorbeard.github.io/code or my GitHub profile)</a></h2>
       <hr></hr>
       
       {% for project in item.technical_experience.projects %}
         <div class="row">
-          <div class="col-xs-2 col-sm-2 col-md-2 proj-name">
+          <div class="col-xs-3 col-sm-2 col-md-2 proj-name">
               <p><a href="{{ project.link }}" class="hidden-print">{{project.title}}</a></p>
               <p class="visible-print-inline">{{ project.title }}</p>
           </div>
