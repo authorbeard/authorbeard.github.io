@@ -39,19 +39,6 @@ $(window).load(function() {
     })
   }
 
-//   if (body.attr('class') == 'resume'){
-
-//     $('.print').click(function(){
-//       // $(body)
-//       //   .css('font-size', '1.25em')
-//       //   .css('margin', 0);
-//       // $('.col-xs-2').css('width', '15%');
-//       // $('.col-xs-10').css('width', '85%');
-// debugger;
-      
-//       window.print();
-//     })
-//   }
 });
 
 
