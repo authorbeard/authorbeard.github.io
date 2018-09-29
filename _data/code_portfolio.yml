@@ -1,8 +1,24 @@
 
 projects:
+  - name: 'CLI TicTacToe, version 1267.88.199'
+    details: 
+      description: "Another TicTacToe, this one with the added twist of permitting no hard-coding of win combinations and the requirement that it take in any arbitrary number for the dimensions of the board and calculate wins, losses and draws from there."
+      featured_image: "tictactoe.svg.png"
+      versions: 
+        - name: "Plain ol Ruby and rspec"
+          source: "bv-ttt"
+          tech: "Ruby, RSpec, cussedness"
+  - name: "bURLy"
+    details:
+      description: "See it here: burly.herokuapp.com\nA URL shortener and my first a) React app; b) Heroku deploy. You give it a URL, it gives you a shortened version of it, though, as a demo project, I couldn't be bothered to go purchase a rill short domain."
+      featured_image: "compress.jpg"
+      versions:
+        - name: "Rails 5, React, Heroku"
+          source: "bv-url"
+          tech: "React, Rails 5, Heroku"
   - name: 'spinner'
     details: 
-      description: "You don\'t simply consume music. It\'s more than white noise. More than a soundtrack. It\'s your emotional heartbeat, nutrition for your soul. It\'s a vital part of your experience of being alive. \n\nSpinner shows you how it weaves through your days and defines your seasons, across formats and platforms, services and genres."
+      description: "You don't simply consume music. It's more than white noise. More than a soundtrack. It's your emotional heartbeat, nutrition for your soul. It's a vital part of your experience of being alive. \n\nSpinner shows you how it weaves through your days and defines your seasons, across formats and platforms, services and genres."
       featured_image: 'spinner default.png'
       versions: 
         - name: 'sinatra'
@@ -14,7 +30,6 @@ projects:
         - name: 'angular'
           source: 'spinner-angular'
           tech: 'ruby, rails 4, AngularJS, angular-devise, UI-Router, OAuth1.0 (custom strategy), Oauth 2.0, API creation and integration, Javascript, Bootstrap 4, Mechanize, Paperclip, Figaro'
-          # demo: 'http://www.google.com'
   - name: 'Personal Site (this one)'
     details:
       description: "A Github-Pages (aka Jekyll) site site built with the Scotch Jekyll Bootstrap theme and extensive customization."
@@ -25,7 +40,7 @@ projects:
           tech: 'jekyll, Liquid, Sass, JavaScript, JQuery, yml'
   - name: 'Looop test'
     details:
-      description: "A code challenge completed for Looop technologies using D3.js (first experience with D3) to visualize API data with mouseover effects. Because of technical difficulties with the testing API, mocked back-end with JavaScript to generate dummy data, served by Node & Express."
+      description: "A code challenge using D3.js (first experience with D3) to visualize API data with mouseover effects. Because of technical difficulties with the testing API, mocked back-end with JavaScript to generate dummy data, served by Node & Express."
       featured_image: 'looop screenshot.png'
       versions:
         - name: "d3"

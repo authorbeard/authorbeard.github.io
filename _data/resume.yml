@@ -6,9 +6,19 @@ general:
         LinkedIn: linkedin.com/in/michaelsnolan
     technical_skills:
       - languages: 'Ruby, JavaScript, Java, SQL, CSS3, Liquid, HTML5, erb, bash'
-        frameworks: 'Rails, Rack, Sinatra, Node.js, Angular 1.5, Bootstrap(3&4), Jekyll'
-        other: 'Data Visualization, JQuery, Ajax, GitHub, ActiveRecord, OAuth (1.0 & 2.0), Sass, Devise, Figaro, Paperclip, D3.js, NetBeans, Chart.js, REST APIs, JSON, MVC & MVVC architecture, TDD'
+        frameworks: 'Rails, Rack, Sinatra, React, Node.js, Angular 1.5, Bootstrap(3&4), Jekyll'
+        other: 'AWS, Heroku, Data Visualization, JQuery, Ajax, GitHub, ActiveRecord, OAuth (1.0 & 2.0), Sass, Devise, Figaro, Paperclip, D3.js, NetBeans, Chart.js, REST APIs, JSON, MVC & MVVC architecture, TDD'
     technical_experience:
+      work:
+        - title: Software Engineer, TuneCore
+        - dates: March 2017-present
+        - description: 
+          - Design and implement new products & upgrades for legacy Rails apps 
+          - Maintain and debug codebase to support other departments
+          - Implemented Sidekiq integration to replace other queue-management strategies
+          - Integrated Spotify API to retrieve release information, including efficient SQL queries over very large tables to find releases needing update, Rake task for daily cron jobs, UI for both customers and admins to receive track-level info 
+          - Converted distributions for several partners to DDEX & upgrade DDEX versions, including refinements to new distribution architecture to improve performance, reduce code duplication, improve visibility of distribution status & error reporting
+          - Expanded internal documentation & led emphasis on disseminating domain knowledge via emphasis on new & updated wikis
       projects:
         - title: 'Personal Site (authorbeard.github.io)'
           description: 'Jekyll platform with Liquid templating language & SASS styling for Github-Pages. Modified open-source theme with custom templates. Used YML data files to generate resume, code portfolio pages. Additional jQuery for styling & animation.'

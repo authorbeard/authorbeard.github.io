@@ -53,6 +53,24 @@
         <div class="tech experience section">
           <h2 class="section-head">Technical Experience <a href="/code" class="comment hidden-print">(for details, see my code portfolio page)</a></h2>
           <hr></hr>
+          {% for job in item.technical_experience.work %}
+            <div class="row">
+              <div class="col-xs-3 col-sm-2 col-md-2 proj-name">
+                  <p><a href="{{ job.link }}" class="hidden-print">{{job.title}}</a></p>
+                  <p class="hidden-print">{{ job.dates }}</p>
+                  <p class="visible-print-inline">{{ job.title }}</p>
+                  <p class="visible-print-inline">{{ job.dates }}</p>
+              </div>
+              <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 proj-details">
+                  <ul>
+                  {% assign p = job.description %}
+                  {% for sentence in p %}
+                    <li>+ {{ sentence }}</li>
+                  {% endfor %}
+                  </ul>
+              </div>
+            </div>
+          {% endfor %}
           
           {% for project in item.technical_experience.projects %}
             <div class="row">
