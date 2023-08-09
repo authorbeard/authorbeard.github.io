@@ -22,9 +22,8 @@ gem "github-pages", group: :jekyll_plugins
 
 # # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-github-metadata", "~> 1.0"
+  gem "jekyll-github-metadata"
   gem 'jekyll-paginate'
   gem 'wkhtmltopdf-binary'
   gem 'html-proofer'
-
 end
