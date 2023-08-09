@@ -3,7 +3,7 @@ layout: post
 title:  "Exhibitionist CLI Gem"
 date:   2016-01-25
 category: blog
-permalink: /exhibitionist-1/
+# permalink: /exhibitionist-1/
 ---
 
 So I'm on the last project of the object-oriented Ruby unit of Learn-Verified, Flatiron School's remote bootcamp. Part of the assignment was to write a blog post about the gem. And since I hadn't started a blog yet to chronicle my studies -- they've been engrossing, like writing is for me, so it's usually a zero-sum game -- so I figured that'd be an easy step to save for the end. 

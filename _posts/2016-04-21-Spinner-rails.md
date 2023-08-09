@@ -6,7 +6,7 @@ category: blog
 featured_image: '/assets/spinner default.png'
 source: https://github.com/authorbeard/spinner-rails-assessment
 tech: Ruby, Rails 4, Devise, OAuth 1.0, ActiveRecord, Mechanize
-permalink: /spinner-rails/
+# permalink: /spinner-rails/
 project: spinner
 ---
 Trust me, what you needed but did not know you needed is you needed a Rails version of Spinner, the app that lets you see how you interact with your music across formats and services. 

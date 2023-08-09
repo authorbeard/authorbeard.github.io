@@ -4,7 +4,7 @@ title: "Spinner + JS + API = Kill Me"
 date: 2016-05-17
 category: blog
 featured_image: '/assets/spinner default.png'
-permalink: /spinner-killme/
+# permalink: /spinner-killme/
 tech: Ruby, Rails, Angular, Angular-Devise, OAuth, Paperclip, SQL, JSON, REST API
 project: spinner
 ---

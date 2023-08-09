@@ -3,7 +3,7 @@ layout: post
 title: "Life Hack: Let General Misgivings Be Your Hype Music"
 date: 2016-06-06
 category: blog
-permalink: /general-misgivings/
+# permalink: /general-misgivings/
 tags: feels
 ---
 
