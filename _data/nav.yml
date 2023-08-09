@@ -1,14 +1,14 @@
 basic_nav:
-    - { url: '/resume', text: 'Resume'}
-    - { url: '/bio', text: 'About' }
+    # - { url: '/resume', text: 'Resume'}
+    # - { url: '/bio', text: 'About' }
     - { url: 'https://github.com/authorbeard/authorbeard.github.io', text: 'Source' }
 
 general_nav:
-    - { url: '/code', text: 'Code'}
-    - { url: '/copy', text: 'Copy'}
-    - { url: '/fiction', text: 'Fiction'}
-    - { url: '/hamwater', text: 'Hamwater'}
-    - { url: '/resume', text: 'Resume'}
+    # - { url: '/code', text: 'Code'}
+    # - { url: '/copy', text: 'Copy'}
+    # - { url: '/fiction', text: 'Fiction'}
+    # - { url: '/hamwater', text: 'Hamwater'}
+    # - { url: '/resume', text: 'Resume'}
     # - { url: '/', text: 'Home' }
 
 
@@ -18,7 +18,7 @@ about_site:
     - { url: 'https://github.com/authorbeard/authorbeard.github.io', text: 'Source' }
 
 landing_nav:
-    - { url: '/code', text: 'Code'}
-    - { url: '/copy', text: 'Copy'}
-    - { url: '/fiction', text: 'Fiction'}
-    - { url: '/hamwater', text: 'Hamwater'}
+    # - { url: '/code', text: 'Code'}
+    # - { url: '/copy', text: 'Copy'}
+    # - { url: '/fiction', text: 'Fiction'}
+    - { closed: 'redirect message', url: 'https://hamwater.wordpress.com/about', text: 'I finally shut this down. But I resumed writing over at my blog, Hamwater. Click this message to go to there.'}
