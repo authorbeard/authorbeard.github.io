@@ -27,3 +27,5 @@ group :jekyll_plugins do
   gem 'wkhtmltopdf-binary'
   gem 'html-proofer'
 end
+
+gem "webrick", "~> 1.8"
