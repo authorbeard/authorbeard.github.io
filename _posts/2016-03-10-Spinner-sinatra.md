@@ -4,7 +4,7 @@ title: "Spinner for Sinatra"
 date: 2016-03-10
 category: blog
 featured_image: '/assets/spinner default.png'
-permalink: /spinner-sinatra/
+# permalink: /spinner-sinatra/
 tech: Ruby, Rails, Sinatra, Mechanize, Nokogiri
 project: spinner
 ---

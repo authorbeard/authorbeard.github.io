@@ -3,7 +3,7 @@ layout: post
 title:  "Exhibitionist CLI Gem 3: Where I Found the Devil"
 date:   2016-01-27
 category: blog
-permalink: /exhibitionist-3/
+# # permalink: /exhibitionist-3/
 ---
 
 I’ve already discussed the top menu a little bit. I decided that’s what should do the controlling. Since the CLI is what’s facing the user, it can act as go-between.

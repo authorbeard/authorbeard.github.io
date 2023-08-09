@@ -3,7 +3,7 @@ layout: post
 title:  "Exhibitionist CLI Gem 2: This Time, It’s Codable"
 date:   2016-01-26
 category: blog
-permalink: /exhibitionist-2/
+# permalink: /exhibitionist-2/
 ---
 
 I started this one the way I started the last one: With a lotta notes and a few walks. But before this shit started to run away with me, I needed to have a good idea of what I was gonna do. And while I’d grabbed the relevant URLs and some CSS that looked like it was gonna work (ish). I’d already confirmed that the Brooklyn Museum and the Guggenheim had easily scrapeable sites, though the Guggenheim had a ton of detail that looked like it would be trouble (boy howdy, was it ever). 

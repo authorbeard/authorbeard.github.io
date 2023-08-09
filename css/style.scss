@@ -22,8 +22,12 @@
     font-size: 36px;
 
     &:hover {
-        @extend %cardo;
-        transform: scale(1.75);
+        color: $hamwater-default-hover;
+    }
+}
+
+div.closed {
+    &:hover {
         color: $hamwater-default-hover;
     }
 }
